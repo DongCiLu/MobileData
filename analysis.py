@@ -261,7 +261,8 @@ def speed_record_analysis(compressed_sessions, rules):
                 if agg_record.speed != (None, None):
                     speed_est = min(agg_record.speed[1], \
                             max_detailed_bin_cnt - 1)
-                    speed_record_filtered_total += agg_record.record_cnt
+                    speed_record_filtered_total += \
+                            agg_record.record_cnt
                     speed_record_filtered_dist[int(speed_est)] += \
                             agg_record.record_cnt
             else:
@@ -302,15 +303,36 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
     speed_app_div_sum = [0] * max_speed_bin_cnt
     speed_app_cat_div_sum = [0] * max_speed_bin_cnt
     speed_cnt_sum = [0] * max_speed_bin_cnt
+    speed_agg_cnt_sum = [0] * max_speed_bin_cnt
 
-    for session, compressed_session in zip(sessions, compressed_sessions):
+    for session, compressed_session in \
+            zip(sessions, compressed_sessions):
         index = 0
         agg_record = None
         speed = None
         last_record = None
         last_record_speed = None
+        app_switch = set()
+        app_cat_switch = set()
+        speed_index = -1
         for record in session:
             while agg_record == None or agg_record.ID != record.agg_ID:
+                if speed_index != -1 and \
+                        speed_index <= max_speed_bin_cnt - 1:
+                    # dont need to do this for last agg record, 
+                    # as it wont have speed est
+                    duration = agg_record.duration[1] - \
+                            agg_record.duration[0]
+                    if duration == 0:
+                        duration = 1
+                    speed_app_switch_sum[speed_index] += \
+                            float(len(app_switch)) / duration
+                    speed_app_cat_switch_sum[speed_index] += \
+                            float(len(app_cat_switch)) / duration
+                    speed_agg_cnt_sum[speed_index] += 1
+                app_switch.clear()
+                app_cat_switch.clear()
+                speed_index = -1
                 agg_record = compressed_session[index]
                 speed_range = get_speed(agg_record, rules)
                 if speed_range != None:
@@ -326,28 +348,29 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
                 speed_gap_sum[speed_index] += \
                         record.time - last_record.time
                 speed_vol_sum[speed_index] += record.vol
-                if record.app_cat != last_record.app_cat:
-                    speed_app_switch_sum[speed_index] += 1 
-                if record.app_cat[0] != last_record.app_cat[0]:
-                    speed_app_cat_switch_sum[speed_index] += 1 
+                app_switch.add(record.app_cat); 
+                app_cat_switch.add(record.app_cat[0]); 
+                # if record.app_cat != last_record.app_cat:
+                    # speed_app_switch_sum[speed_index] += 1 
+                # if record.app_cat[0] != last_record.app_cat[0]:
+                    # speed_app_cat_switch_sum[speed_index] += 1 
                 speed_cnt_sum[speed_index] += 1
 
             last_record = record
             last_record_speed = speed
 
-    print speed_app_switch_sum
-    print speed_cnt_sum
-
-    for vol_sum, gap_sum, switch_sum, cat_switch_sum, cnt in zip(\
-            speed_vol_sum, speed_gap_sum, \
+    for vol_sum, gap_sum, switch_sum, cat_switch_sum, cnt, agg_cnt \
+            in zip(speed_vol_sum, speed_gap_sum, \
             speed_app_switch_sum, speed_app_cat_switch_sum, \
-            speed_cnt_sum):
+            speed_cnt_sum, speed_agg_cnt_sum):
         if cnt != 0:
             speed_gap_dist.append(gap_sum / cnt)
             speed_vol_dist.append(vol_sum / cnt)
-            speed_app_switch_dist.append(float(switch_sum) / cnt)
-            speed_app_cat_switch_dist.append(float(cat_switch_sum) / cnt)
+            speed_app_switch_dist.append(switch_sum / agg_cnt)
+            speed_app_cat_switch_dist.append( 
+                    cat_switch_sum / agg_cnt)
         else:
+            print 'ERROR: zero count'
             print gap_sum
             speed_gap_dist.append(0)
 
