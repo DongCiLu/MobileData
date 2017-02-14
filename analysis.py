@@ -326,10 +326,10 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
                     if duration == 0:
                         duration = 1
                     speed_app_switch_sum[speed_index] += \
-                            float(len(app_switch)) / duration
+                            float(len(app_switch)) 
                     speed_app_cat_switch_sum[speed_index] += \
-                            float(len(app_cat_switch)) / duration
-                    speed_agg_cnt_sum[speed_index] += 1
+                            float(len(app_cat_switch)) 
+                    speed_agg_cnt_sum[speed_index] += duration
                 app_switch.clear()
                 app_cat_switch.clear()
                 speed_index = -1
