@@ -336,6 +336,7 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
             last_record_speed = speed
 
     print speed_app_switch_sum
+    print speed_cnt_sum
 
     for vol_sum, gap_sum, switch_sum, cat_switch_sum, cnt in zip(\
             speed_vol_sum, speed_gap_sum, \
@@ -344,16 +345,16 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
         if cnt != 0:
             speed_gap_dist.append(gap_sum / cnt)
             speed_vol_dist.append(vol_sum / cnt)
-            speed_app_switch_dist.append(switch_sum / cnt)
-            speed_app_cat_switch_dist.append(cat_switch_sum / cnt)
+            speed_app_switch_dist.append(float(switch_sum) / cnt)
+            speed_app_cat_switch_dist.append(float(cat_switch_sum) / cnt)
         else:
             print gap_sum
             speed_gap_dist.append(0)
 
-    print 'Distribution of gaps for various speed:'
-    print speed_gap_dist
-    print 'Distribution of vols for various speed:'
-    print speed_vol_dist
+    # print 'Distribution of gaps for various speed:'
+    # print speed_gap_dist
+    # print 'Distribution of vols for various speed:'
+    # print speed_vol_dist
     print 'Distribution of app switch for various speed:'
     print speed_app_switch_dist
     print 'Distribution of app category switch for various speed:'
