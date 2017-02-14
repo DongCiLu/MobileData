@@ -38,8 +38,8 @@ def parse_traces(filename):
                     # create variables
                     uid = segs[0]
                     # record: time, (lng, lat), (cat1, cat2), vol
-                    # app_cat = int(segs[11])
-                    app_cat = (int(segs[11]), int(segs[12]))
+                    app_cat = int(segs[11])
+                    # app_cat = (int(segs[11]), int(segs[12]))
                     record = DataEntry(float(segs[6]), \
                             (float(segs[9]), float(segs[10])), \
                             app_cat, \
@@ -109,8 +109,9 @@ def special_filter(sessions):
 
     return filtered_sessions
 
-def make_agg_record(ID, start_record, end_record, last_tower_end_record, \
-        record, app_access_cnt, app_access_vol, record_cnt):
+def make_agg_record(ID, start_record, end_record, \
+        last_tower_end_record, record, app_access_cnt, \
+        app_access_vol, record_cnt):
     pos = start_record.pos
     in_tower = last_tower_end_record.pos
     out_tower = record.pos

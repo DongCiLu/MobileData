@@ -2,8 +2,11 @@ from speedest import get_speed
 
 max_bin_cnt = 20
 max_detailed_bin_cnt = 200
+# TODO 
 max_speed_bin_cnt = 8
 speed_per_bin = 20
+# max_speed_bin_cnt = 2
+# speed_per_bin = 50
 
 def session_basic_analysis(sessions):
     print '-------Session Basic Analysis-------'
@@ -54,7 +57,7 @@ def app_category_analysis(sessions):
     app_record_cnt = {}
     app_vol = {}
     for session in sessions:
-        session_mask =  set()
+        session_mask = set()
         for record in session:
             app_cat = int(record.app_cat[0])
             if app_cat not in app_record_cnt:
@@ -88,7 +91,6 @@ def example_user_analysis(sessions, compressed_sessions):
                     euf.write('{0} {1} {2}\n'.format(record.time, \
                             record.pos[0], record.pos[1]))
                 break
-
 
 def wired_point_analysis(sessions):
     print '-------Wired Point Analysis-------'
@@ -289,9 +291,17 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
     print '-------Speed Usage Pattern Analysis-------'
     speed_gap_dist = []
     speed_vol_dist = []
-    speed_gap_sum_dist = [0] * max_speed_bin_cnt
-    speed_vol_sum_dist = [0] * max_speed_bin_cnt
-    speed_cnt_dist = [0] * max_speed_bin_cnt
+    speed_app_switch_dist = []
+    speed_app_cat_switch_dist = []
+    speed_app_div_dist = []
+    speed_app_cat_div_dist = []
+    speed_gap_sum = [0] * max_speed_bin_cnt
+    speed_vol_sum = [0] * max_speed_bin_cnt
+    speed_app_switch_sum = [0] * max_speed_bin_cnt
+    speed_app_cat_switch_sum = [0] * max_speed_bin_cnt
+    speed_app_div_sum = [0] * max_speed_bin_cnt
+    speed_app_cat_div_sum = [0] * max_speed_bin_cnt
+    speed_cnt_sum = [0] * max_speed_bin_cnt
 
     for session, compressed_session in zip(sessions, compressed_sessions):
         index = 0
@@ -313,19 +323,29 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
                 speed_index = int(speed / speed_per_bin)
                 if speed_index > max_speed_bin_cnt - 1:
                     continue
-                speed_gap_sum_dist[speed_index] += \
+                speed_gap_sum[speed_index] += \
                         record.time - last_record.time
-                speed_vol_sum_dist[speed_index] += record.vol
-                speed_cnt_dist[speed_index] += 1
+                speed_vol_sum[speed_index] += record.vol
+                if record.app_cat != last_record.app_cat:
+                    speed_app_switch_sum[speed_index] += 1 
+                if record.app_cat[0] != last_record.app_cat[0]:
+                    speed_app_cat_switch_sum[speed_index] += 1 
+                speed_cnt_sum[speed_index] += 1
 
             last_record = record
             last_record_speed = speed
 
-    for vol_sum, gap_sum, cnt in zip(\
-            speed_vol_sum_dist, speed_gap_sum_dist, speed_cnt_dist):
+    print speed_app_switch_sum
+
+    for vol_sum, gap_sum, switch_sum, cat_switch_sum, cnt in zip(\
+            speed_vol_sum, speed_gap_sum, \
+            speed_app_switch_sum, speed_app_cat_switch_sum, \
+            speed_cnt_sum):
         if cnt != 0:
             speed_gap_dist.append(gap_sum / cnt)
             speed_vol_dist.append(vol_sum / cnt)
+            speed_app_switch_dist.append(switch_sum / cnt)
+            speed_app_cat_switch_dist.append(cat_switch_sum / cnt)
         else:
             print gap_sum
             speed_gap_dist.append(0)
@@ -334,6 +354,10 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
     print speed_gap_dist
     print 'Distribution of vols for various speed:'
     print speed_vol_dist
+    print 'Distribution of app switch for various speed:'
+    print speed_app_switch_dist
+    print 'Distribution of app category switch for various speed:'
+    print speed_app_cat_switch_dist
 
 def gap_distribution_analysis(sessions, compressed_sessions, rules):
     print '-------Gap Distribution Analysis-------'
@@ -398,17 +422,11 @@ def speed_appcat_analysis(\
     speed_allcat_vol_sum = [0] * max_speed_bin_cnt
     speed_allcat_duration = [0] * max_speed_bin_cnt
 
-    print 'how much {0}'.format(len(speed_appcat_stat))
+    for app_cat in appcat_filter:
+        speed_appcat_record_sum[app_cat] = [0] * max_speed_bin_cnt
+        speed_appcat_vol_sum[app_cat] = [0] * max_speed_bin_cnt
+        speed_appcat_duration[app_cat] = [0] * max_speed_bin_cnt
 
-    appcat_index = 0
-    for app_cat in speed_appcat_stat:
-        if appcat_index < len(appcat_filter) and \
-                app_cat == appcat_filter[appcat_index]:
-            speed_appcat_record_sum[app_cat] = [0] * max_speed_bin_cnt
-            speed_appcat_vol_sum[app_cat] = [0] * max_speed_bin_cnt
-            speed_appcat_duration[app_cat] = [0] * max_speed_bin_cnt
-            appcat_index += 1
-    print "how all {0}".format(len(speed_appcat_vol_sum))
     print speed_appcat_vol_sum
 
     with open(speed_appcat_cor_fn, 'w') as out:
@@ -416,10 +434,13 @@ def speed_appcat_analysis(\
             for agg_stat in speed_appcat_stat[app_cat]:
                 index = int(agg_stat[0] / speed_per_bin)
                 if index > max_speed_bin_cnt - 1:
+                    # TODO
                     continue
+                    # index = max_speed_bin_cnt - 1
                 if app_cat in speed_appcat_record_sum:
-                    speed_appcat_record_sum[app_cat][index] += agg_stat[1]
-                    speed_appcat_vol_sum[app_cat][index] += agg_stat[1]
+                    speed_appcat_record_sum[app_cat][index] += \
+                            agg_stat[1]
+                    speed_appcat_vol_sum[app_cat][index] += agg_stat[2]
                     speed_appcat_duration[app_cat][index] += agg_stat[3]
                 speed_allcat_record_sum[index] += agg_stat[1]
                 speed_allcat_vol_sum[index] += agg_stat[2]
@@ -428,6 +449,10 @@ def speed_appcat_analysis(\
             if app_cat in speed_appcat_record_sum:
                 for record_sum in speed_appcat_record_sum[app_cat]:
                     out.write('{0},'.format(record_sum))
+                # for vol_sum in speed_appcat_vol_sum[app_cat]:
+                    # out.write('{0},'.format(vol_sum))
+                # for duration in speed_appcat_duration[app_cat]:
+                    # out.write('{0},'.format(duration))
                 out.write('\n')
 
 
