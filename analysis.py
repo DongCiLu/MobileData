@@ -372,8 +372,8 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
                     if record.time - last_visit > active_threshold:
                         del active_set[app_cat]
                 # add new app to active set
-                if record.app_cat not in active_set:
-                    active_set[record.app_cat] = record.time
+                if record.app_cat[0] not in active_set:
+                    active_set[record.app_cat[0]] = record.time
                 # count stack
                 speed_app_active_sum[speed_index] += len(active_set)
                     
@@ -407,9 +407,9 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
     # print speed_vol_dist
     # print 'Distribution of app switch for various speed:'
     # print speed_app_switch_dist
-    print 'Distribution of app category switch for various speed:'
-    print speed_app_cat_switch_dist
-    print 'Distribution of active app for various speed:'
+    # print 'Distribution of app category switch for various speed:'
+    # print speed_app_cat_switch_dist
+    print 'Distribution of active app cat for various speed:'
     print speed_app_active_dist
 
 def gap_distribution_analysis(sessions, compressed_sessions, rules):
