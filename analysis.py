@@ -295,6 +295,52 @@ def speed_record_analysis(compressed_sessions, rules):
     print 'Distribution of filtered speed estimates:'
     print speed_record_filtered_dist
 
+def speed_app_used_analysis(compressed_sessions, rules):
+    print '-------Speed app used Analysis-------'
+    speed_app_dist = []
+    speed_app_sum = [0] * max_speed_bin_cnt
+    speed_app_cat_dist = []
+    speed_app_cat_sum = [0] * max_speed_bin_cnt
+    speed_duration_sum = [0] * max_speed_bin_cnt
+    for compressed_session in compressed_sessions:
+        speed_index = None
+        last_speed_index = None
+        app = set()
+        cat = set()
+        start_time = None
+        for agg_record in compressed_session:
+            speed_range = get_speed(agg_record, rules)
+            if speed_range != None:
+                speed = speed_range[1]
+                speed_index = int(speed / speed_per_bin)
+            if speed_index != None and \
+                    speed_index <= max_speed_bin_cnt - 1:
+                if speed_index != last_speed_index:
+                    if last_speed_index != None and \
+                            last_speed_index <= max_speed_bin_cnt - 1: 
+                        speed_app_sum[speed_index] += len(app)
+                        speed_app_cat_sum[speed_index] += len(cat)
+                        speed_duration_sum[speed_index] += \
+                                agg_record.duration[0] - start_time
+                    app.clear()
+                    cat.clear()
+                    start_time = agg_record.duration[0]
+                for app_cat in agg_record.app_access_cnt:
+                    app.add(app_cat)
+                    cat.add(app_cat[0])
+
+            last_speed_index = speed_index
+            
+    for app_sum, app_cat_sum, duration in zip( \
+            speed_app_sum, speed_app_cat_sum, speed_duration_sum):
+        speed_app_dist.append(app_sum / duration)
+        speed_app_cat_dist.append(app_cat_sum / duration)
+
+    print 'Distribution of app used for various speed:'
+    print speed_app_dist
+    print 'Distribution of app category used for various speed:'
+    print speed_app_cat_dist
+
 def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
     print '-------Speed Usage Pattern Analysis-------'
     speed_gap_dist = []
@@ -335,8 +381,8 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
                     # as it wont have speed est
                     duration = agg_record.duration[1] - \
                             agg_record.duration[0]
-                    if duration == 0:
-                        duration = 1
+                    # if duration == 0:
+                        # duration = 1
                     speed_app_switch_sum[speed_index] += \
                             float(len(app_switch)) 
                     speed_app_cat_switch_sum[speed_index] += \
@@ -405,12 +451,12 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
     # print speed_gap_dist
     # print 'Distribution of vols for various speed:'
     # print speed_vol_dist
-    # print 'Distribution of app switch for various speed:'
-    # print speed_app_switch_dist
-    # print 'Distribution of app category switch for various speed:'
-    # print speed_app_cat_switch_dist
-    print 'Distribution of active app cat for various speed:'
-    print speed_app_active_dist
+    print 'Distribution of app switch for various speed:'
+    print speed_app_switch_dist
+    print 'Distribution of app category switch for various speed:'
+    print speed_app_cat_switch_dist
+    # print 'Distribution of active app cat for various speed:'
+    # print speed_app_active_dist
 
 def gap_distribution_analysis(sessions, compressed_sessions, rules):
     print '-------Gap Distribution Analysis-------'
