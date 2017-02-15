@@ -76,20 +76,27 @@ def app_category_analysis(sessions):
     for app_cat in app_record_cnt:
         print app_cat, app_record_cnt[app_cat], app_vol[app_cat], app_session_cnt[app_cat]
 
-def example_user_analysis(sessions, compressed_sessions):
+def example_user_analysis(sessions, compressed_sessions, rules):
     print '-------Example User Analysis-------'
     eu_fn = 'results/example_user.txt'
     with open(eu_fn, 'w') as euf:
-        for session, compressed_session in zip(sessions, compressed_sessions):
+        for session, compressed_session in zip( \
+                 sessions, compressed_sessions):
             tower_set = set()
             for record in session:
                 tower_set.add(record.pos)
-            if len(tower_set) > 4 and \
-                    len(compressed_session) == 7 and \
-                    len(session) > 70:
+            if len(tower_set) > 7:
+                index = 0
+                agg_record = None
+                speed_range = (None, None)
                 for record in session:
-                    euf.write('{0} {1} {2}\n'.format(record.time, \
-                            record.pos[0], record.pos[1]))
+                    while agg_record == None or \
+                            agg_record.ID != record.agg_ID:
+                        agg_record = compressed_session[index]
+                        index += 1
+                        speed_range = get_speed(agg_record, rules)
+                    euf.write('{0} {1} {2} {3}\n'.format(record.time, \
+                            record.pos[0], record.pos[1], speed_range))
                 break
 
 def wired_point_analysis(sessions):
@@ -400,8 +407,8 @@ def speed_usage_pattern_analysis(sessions, compressed_sessions, rules):
     # print speed_vol_dist
     # print 'Distribution of app switch for various speed:'
     # print speed_app_switch_dist
-    # print 'Distribution of app category switch for various speed:'
-    # print speed_app_cat_switch_dist
+    print 'Distribution of app category switch for various speed:'
+    print speed_app_cat_switch_dist
     print 'Distribution of active app for various speed:'
     print speed_app_active_dist
 
