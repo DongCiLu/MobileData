@@ -313,21 +313,19 @@ def speed_app_used_analysis(compressed_sessions, rules):
             if speed_range != None:
                 speed = speed_range[1]
                 speed_index = int(speed / speed_per_bin)
-            if speed_index != None and \
-                    speed_index <= max_speed_bin_cnt - 1:
-                if speed_index != last_speed_index:
-                    if last_speed_index != None and \
-                            last_speed_index <= max_speed_bin_cnt - 1: 
-                        speed_app_sum[speed_index] += len(app)
-                        speed_app_cat_sum[speed_index] += len(cat)
-                        speed_duration_sum[speed_index] += \
-                                agg_record.duration[0] - start_time
-                    app.clear()
-                    cat.clear()
-                    start_time = agg_record.duration[0]
-                for app_cat in agg_record.app_access_cnt:
-                    app.add(app_cat)
-                    cat.add(app_cat[0])
+            if speed_index != last_speed_index:
+                if last_speed_index != None and \
+                        last_speed_index <= max_speed_bin_cnt - 1: 
+                    speed_app_sum[last_speed_index] += len(app)
+                    speed_app_cat_sum[last_speed_index] += len(cat)
+                    speed_duration_sum[last_speed_index] += \
+                            agg_record.duration[0] - start_time
+                app.clear()
+                cat.clear()
+                start_time = agg_record.duration[0]
+            for app_cat in agg_record.app_access_cnt:
+                app.add(app_cat)
+                cat.add(app_cat[0])
 
             last_speed_index = speed_index
             
