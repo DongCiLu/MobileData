@@ -7,7 +7,7 @@ In this section, we systematically describe our methodology for estimating user 
 
 Our methods consist of multiple steps, where we first decompose traces of each user into segments to zoom into intra-cell speed estimation. Next, we estimate the distance and the travel time for each segment, where we employ a distance lower bound to filter out low-confidence estimates. In practice, such estimates are usually too noisy to be meaningful or reliable. Finally, we demonstrate how to compensate for speed estimation errors. \autoref{fig:system_overview} shows the structural overview of this methodology. The raw data parser on one end of this figure gathers data access records by users and sorts records of each user by time. On the other end, a list of tower locations from the mobile data access traces is extracted. Note that the system assigns a list for each city during processing steps.
 
-After we have parsed raw traces, we next process them in different steps in parallel. In one of the next steps, we analyze traces of each user and generate pass-boundary events (PBEs) with the timestamp and location estimates of each record. Based on these events, we can estimate intra-cell travel distances and time accordingly.
+After we have parsed raw traces, we next process them in different steps in parallel. In one of the next steps, we analyze traces of each user and generate pass-boundary events (PBE) with the timestamp and location estimates of each record. Based on these events, we can estimate intra-cell travel distances and time accordingly.
 
 In the second sequence of steps, we process the tower list for each city, by generating a Voronoi diagram based on tower coordinates. Here, Voronoi diagrams are used to simulate the tower coverage map, based on which we calculate all intra-cell boundary-to-boundary distance lower bounds. We keep such bounds in a separate list for lookup needs.
 
@@ -38,8 +38,8 @@ We denote the boundary of $P_{i, j}$, which is the overlapped area, as $(l_i, l_
 Once PBEs are defined, we use them as reference points to decompose mobile data records of each user into segments.
 
 \begin{algorithm}
- \KwData{$Trace$: mobile data trace arranged by users $u$ with record entries $e$ sorted by time. Each $e$ has location estimate $l_e$ and timestamp $t_e$}
- \KwResult{$R$: segments $r$ arranged by user and time.}
+ \KwData{$Trace$: mobile data trace arranged by users $u$ with record entries $e$ sorted by time. Each $e$ has location estimate $l_e$ and timestamp $t_e$. We use $l_c$ to represent location of current entry.}
+ \KwResult{$R$: segments $r$ arranged by user and time. Its location $l_r$ is defined by location of two adjacent PBE. Its time $t_r$ is defined by the time of first data entry and time of last data entry in this segment.}
  \For{each $u$ in $Trace$}{
 	 $l_c \gets \emptyset$,
 	 $r \gets \emptyset$,
@@ -49,7 +49,7 @@ Once PBEs are defined, we use them as reference points to decompose mobile data 
 	 \For{each $e$ in $Trace[u]$}{
 		 \If{$l_c \neq \emptyset$ and $l_c \neq l_e$}{
 			 $l_r \gets (l_{e_{lastend}}, l_c, l_e)$,
-			 $t_r \gets (t_{e_{start}}, t{e_{end}})$ \;
+			 $t_r \gets (t_{e_{start}}, t_{e_{end}})$ \;
 			 append $r$ to $R[u]$ \;
 		 }
 		 \If{$l_c = \emptyset$ or $l_c \neq l_e$}{
@@ -60,7 +60,7 @@ Once PBEs are defined, we use them as reference points to decompose mobile data 
 		 $e_{end} \gets e$ \;
 	 }
 	 $l_r \gets (l_{e_{lastend}}, l_c, l_e)$,
-	 $t_r \gets (t_{e_{start}}, t{e_{end}})$ \;
+	 $t_r \gets (t_{e_{start}}, t_{e_{end}})$ \;
 	 append $r$ to $R[u]$ \;
  }
  \Return{$R$}

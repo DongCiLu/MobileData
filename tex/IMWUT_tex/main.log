@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.26)  11 MAY 2017 10:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.26)  15 MAY 2017 05:15
 entering extended mode
 **./main.tex
 (main.tex
@@ -760,84 +760,84 @@ Package: threeparttable 2003/06/13  v 3.0
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 83.
-LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 83.
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 84.
+LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 84.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\omlnxlmi.fd"
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 83.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 84.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxexa.fd"
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 83.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 84.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 83.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 84.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmsntxsy.fd"
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 83.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 84.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmxntxexx.fd"
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 83.
+(Font)              scaled to size 8.0pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 83.
+(Font)              scaled to size 6.2pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 83.
-LaTeX Font Info:    Try loading font information for U+msa on input line 83.
+(Font)              scaled to size 5.5pt on input line 84.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 83.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 83.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 84.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxmia.fd"
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 83.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 84.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsym.fd"
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 83.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 84.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsyc.fd"
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Info: Redefining \microtypecontext on input line 83.
+LaTeX Info: Redefining \microtypecontext on input line 84.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -853,7 +853,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
  ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring OFF on input line 84.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -863,9 +863,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count141
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 84.
+LaTeX Info: Redefining \pageref on input line 84.
+LaTeX Info: Redefining \nameref on input line 84.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -940,50 +940,50 @@ Package caption Info: subfigure package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 126.
+(Font)              scaled to size 14.4pt on input line 127.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 126.
-LaTeX Font Info:    Try loading font information for OT1+LinuxBiolinumT-TLF on input line 126.
+(Font)              scaled to size 14.4pt on input line 127.
+LaTeX Font Info:    Try loading font information for OT1+LinuxBiolinumT-TLF on input line 127.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\ot1linuxbiolinumt-tlf.fd"
 File: OT1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for OT1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on input line 126.
+(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on input line 127.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 126.
+(Font)              scaled to size 14.4pt on input line 127.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 126.
+(Font)              scaled to size 14.4pt on input line 127.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 126.
+(Font)              scaled to size 12.0pt on input line 127.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 126.
+(Font)              scaled to size 12.0pt on input line 127.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 126.
-LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 126.
+(Font)              scaled to size 10.0pt on input line 127.
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 127.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\ts1linuxlibertinet-tlf.fd"
 File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 126.
+(Font)              scaled to size 8.0pt on input line 127.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 126.
+(Font)              scaled to size 9.0pt on input line 127.
  (abstract.tex)
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 126.
+(Font)              scaled to size 9.0pt on input line 127.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 126.
+(Font)              scaled to size 9.0pt on input line 127.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 126.
+(Font)              scaled to size 7.3pt on input line 127.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -995,64 +995,60 @@ LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
 Missing character: There is no ‚ in font LinLibertineT-tlf-ot1!
 Missing character: There is no ô in font LinLibertineT-tlf-ot1!
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 26.
  [1.1{C:/Users/Zheng Lu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for TS1+LinuxBiolinumT-TLF on input line 63.
+LaTeX Font Info:    Try loading font information for TS1+LinuxBiolinumT-TLF on input line 64.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\ts1linuxbiolinumt-tlf.fd"
 File: TS1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 63.
+(Font)              scaled to size 10.0pt on input line 64.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [2.2]
-<figures/record_count_hist.pdf, id=165, 578.16pt x 433.62pt>
+<figures/record_count_hist.pdf, id=199, 578.16pt x 433.62pt>
 File: figures/record_count_hist.pdf Graphic file (type pdf)
  <use figures/record_count_hist.pdf>
-Package pdftex.def Info: figures/record_count_hist.pdf used on input line 81.
+Package pdftex.def Info: figures/record_count_hist.pdf used on input line 84.
 (pdftex.def)             Requested size: 144.7377pt x 108.5503pt.
 
-<figures/time_interval_hist.pdf, id=166, 578.16pt x 433.62pt>
+<figures/time_interval_hist.pdf, id=200, 578.16pt x 433.62pt>
 File: figures/time_interval_hist.pdf Graphic file (type pdf)
  <use figures/time_interval_hist.pdf>
-Package pdftex.def Info: figures/time_interval_hist.pdf used on input line 82.
+Package pdftex.def Info: figures/time_interval_hist.pdf used on input line 85.
 (pdftex.def)             Requested size: 144.7377pt x 108.5503pt.
 
-<figures/visited_tower_hist.pdf, id=167, 578.16pt x 433.62pt>
+<figures/visited_tower_hist.pdf, id=201, 578.16pt x 433.62pt>
 File: figures/visited_tower_hist.pdf Graphic file (type pdf)
  <use figures/visited_tower_hist.pdf>
-Package pdftex.def Info: figures/visited_tower_hist.pdf used on input line 83.
+Package pdftex.def Info: figures/visited_tower_hist.pdf used on input line 86.
 (pdftex.def)             Requested size: 144.7377pt x 108.5503pt.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 85.
+(Font)              scaled to size 9.0pt on input line 88.
 ) (relate.tex [3.3 <./figures/record_count_hist.pdf> <./figures/time_interval_hist.pdf> <./figures/visited_tower_hist.pd
-f>]
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 15.
-
-
-Package natbib Warning: Citation `leontiadis2014cells' on page 4 undefined on input line 15.
-
-
-Package natbib Warning: Citation `yang2016apps' on page 4 undefined on input line 20.
-
-) (data.tex <./figures/hotmap.jpg, id=230, 666.99188pt x 590.95781pt>
+f>]) (data.tex
+<./figures/hotmap.jpg, id=263, 666.99188pt x 590.95781pt>
 File: ./figures/hotmap.jpg Graphic file (type jpg)
  <use ./figures/hotmap.jpg>
 Package pdftex.def Info: ./figures/hotmap.jpg used on input line 40.
 (pdftex.def)             Requested size: 206.92343pt x 183.33028pt.
 
-<./figures/typical_user.pdf, id=231, 644.4075pt x 522.95375pt>
+<./figures/typical_user.pdf, id=264, 644.4075pt x 522.95375pt>
 File: ./figures/typical_user.pdf Graphic file (type pdf)
  <use ./figures/typical_user.pdf>
 Package pdftex.def Info: ./figures/typical_user.pdf used on input line 46.
 (pdftex.def)             Requested size: 226.14749pt x 183.5233pt.
+
+Underfull \vbox (badness 3407) has occurred while \output is active []
+
  [4.4]
-<./figures/system_overview.pdf, id=245, 901.86937pt x 286.06876pt>
+<./figures/system_overview.pdf, id=287, 901.86937pt x 286.06876pt>
 File: ./figures/system_overview.pdf Graphic file (type pdf)
  <use ./figures/system_overview.pdf>
 Package pdftex.def Info: ./figures/system_overview.pdf used on input line 80.
@@ -1061,37 +1057,32 @@ Package pdftex.def Info: ./figures/system_overview.pdf used on input line 80.
 
 pdfTeX warning: pdflatex.exe (file ./figures/system_overview.pdf): PDF inclusion: multiple pdfs with page group included
  in a single page
->]) (approach.tex <./figures/passing_boundary.pdf, id=282, 723.45282pt x 274.02374pt>
+>]) (approach.tex [6.6] <./figures/passing_boundary.pdf, id=327, 723.45282pt x 274.02374pt>
 File: ./figures/passing_boundary.pdf Graphic file (type pdf)
 
 <use ./figures/passing_boundary.pdf>
 Package pdftex.def Info: ./figures/passing_boundary.pdf used on input line 24.
 (pdftex.def)             Requested size: 452.295pt x 171.31877pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6.6]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 7.0pt on input line 66.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 70.
- [7.7 <./figures/passing_boundary.pdf>] <./figures/illustrate_cases.pdf, id=318, 404.51125pt x 331.2375pt>
+ [7.7 <./figures/passing_boundary.pdf>]
+<./figures/illustrate_cases.pdf, id=358, 404.51125pt x 331.2375pt>
 File: ./figures/illustrate_cases.pdf Graphic file (type pdf)
-
-<use ./figures/illustrate_cases.pdf>
+ <use ./figures/illustrate_cases.pdf>
 Package pdftex.def Info: ./figures/illustrate_cases.pdf used on input line 87.
 (pdftex.def)             Requested size: 140.89973pt x 115.37888pt.
- <./figures/voronoi_illustrate.pdf, id=319, 666.49pt x 579.16376pt>
-File: ./figures/voronoi_illustrate.pdf Graphic file (type pdf)
 
-<use ./figures/voronoi_illustrate.pdf>
+<./figures/voronoi_illustrate.pdf, id=359, 666.49pt x 579.16376pt>
+File: ./figures/voronoi_illustrate.pdf Graphic file (type pdf)
+ <use ./figures/voronoi_illustrate.pdf>
 Package pdftex.def Info: ./figures/voronoi_illustrate.pdf used on input line 93.
 (pdftex.def)             Requested size: 134.33142pt x 116.72327pt.
- <./figures/virtual_boundary.pdf, id=320, 313.17pt x 258.9675pt>
-File: ./figures/virtual_boundary.pdf Graphic file (type pdf)
 
-<use ./figures/virtual_boundary.pdf>
+<./figures/virtual_boundary.pdf, id=360, 313.17pt x 258.9675pt>
+File: ./figures/virtual_boundary.pdf Graphic file (type pdf)
+ <use ./figures/virtual_boundary.pdf>
 Package pdftex.def Info: ./figures/virtual_boundary.pdf used on input line 100.
 (pdftex.def)             Requested size: 139.55602pt x 115.40414pt.
  [8.8] [9.9 <./figures/illustrate_cases.pdf> <./figures/voronoi_illustrate.pdf
@@ -1102,7 +1093,7 @@ ded in a single page
 
 pdfTeX warning: pdflatex.exe (file ./figures/virtual_boundary.pdf): PDF inclusion: multiple pdfs with page group include
 d in a single page
->]
+>] [10.10]
 LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 240.
  ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\inconsolata\ot1zi4.fd"
 File: ot1zi4.fd 2016/12/29 OT1/zi4 (Inconsolata)
@@ -1113,229 +1104,187 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zi4' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [10.10]) (experiments.tex
-<./figures/speed_cdf.pdf, id=418, 578.16pt x 433.62pt>
+) (evaluation.tex
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <10> not available
+(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+ [11.11]
+<./figures/cdf_limited.pdf, id=477, 578.16pt x 433.62pt>
+File: ./figures/cdf_limited.pdf Graphic file (type pdf)
+ <use ./figures/cdf_limited.pdf>
+Package pdftex.def Info: ./figures/cdf_limited.pdf used on input line 16.
+(pdftex.def)             Requested size: 226.14749pt x 169.60735pt.
+ [12.12 <./figures/cdf_limited.pdf>] <./figures/error_bar.pdf, id=502, 578.16pt x 433.62pt>
+File: ./figures/error_bar.pdf Graphic file (type pdf)
+ <use ./figures/error_bar.pdf>
+Package pdftex.def Info: ./figures/error_bar.pdf used on input line 29.
+(pdftex.def)             Requested size: 226.14749pt x 169.60735pt.
+) (experiments.tex
+<./figures/speed_cdf.pdf, id=505, 578.16pt x 433.62pt>
 File: ./figures/speed_cdf.pdf Graphic file (type pdf)
  <use ./figures/speed_cdf.pdf>
 Package pdftex.def Info: ./figures/speed_cdf.pdf used on input line 7.
 (pdftex.def)             Requested size: 226.14749pt x 169.60735pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11.11] <./figures/large_font/speed_vol.pdf, id=440, 578.16pt x 433.62pt>
+ [13.13 <./figures/error_bar.pdf>]
+<./figures/large_font/speed_vol.pdf, id=519, 578.16pt x 433.62pt>
 File: ./figures/large_font/speed_vol.pdf Graphic file (type pdf)
  <use ./figures/large_font/speed_vol.pdf>
-Package pdftex.def Info: ./figures/large_font/speed_vol.pdf used on input line 22.
+Package pdftex.def Info: ./figures/large_font/speed_vol.pdf used on input line 24.
 (pdftex.def)             Requested size: 217.09966pt x 162.81882pt.
 
-<./figures/large_font/speed_gap.pdf, id=441, 578.16pt x 433.62pt>
+<./figures/large_font/speed_gap.pdf, id=520, 578.16pt x 433.62pt>
 File: ./figures/large_font/speed_gap.pdf Graphic file (type pdf)
  <use ./figures/large_font/speed_gap.pdf>
-Package pdftex.def Info: ./figures/large_font/speed_gap.pdf used on input line 23.
+Package pdftex.def Info: ./figures/large_font/speed_gap.pdf used on input line 25.
 (pdftex.def)             Requested size: 217.09966pt x 162.81882pt.
 
-<./figures/large_font/speed_gap_cdf.pdf, id=442, 578.16pt x 433.62pt>
+<./figures/large_font/speed_gap_cdf.pdf, id=521, 578.16pt x 433.62pt>
 File: ./figures/large_font/speed_gap_cdf.pdf Graphic file (type pdf)
  <use ./figures/large_font/speed_gap_cdf.pdf>
-Package pdftex.def Info: ./figures/large_font/speed_gap_cdf.pdf used on input line 24.
+Package pdftex.def Info: ./figures/large_font/speed_gap_cdf.pdf used on input line 26.
 (pdftex.def)             Requested size: 217.09966pt x 162.81882pt.
 
-<./figures/large_font/speed_per_conn_vol.pdf, id=443, 578.16pt x 433.62pt>
+<./figures/large_font/speed_per_conn_vol.pdf, id=522, 578.16pt x 433.62pt>
 File: ./figures/large_font/speed_per_conn_vol.pdf Graphic file (type pdf)
 
 <use ./figures/large_font/speed_per_conn_vol.pdf>
-Package pdftex.def Info: ./figures/large_font/speed_per_conn_vol.pdf used on input line 25.
+Package pdftex.def Info: ./figures/large_font/speed_per_conn_vol.pdf used on input line 27.
 (pdftex.def)             Requested size: 217.09966pt x 162.81882pt.
- [12.12 <./figures/speed_cdf.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./figures/num_access_high_low_speed_8_6.pdf, id=463, 729.63588pt x 266.9975pt>
+ [14.14 <./figures/speed_cdf.pdf>] [15.15 <./figures/large_font/speed_vol.pdf> <./figures/large_font/speed_gap.pdf> <./f
+igures/large_font/speed_gap_cdf.pdf> <./figures/large_font/speed_per_conn_vol.pdf>] <./figures/num_access_high_low_speed
+_8_6.pdf, id=567, 729.63588pt x 266.9975pt>
 File: ./figures/num_access_high_low_speed_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/num_access_high_low_speed_8_6.pdf>
-Package pdftex.def Info: ./figures/num_access_high_low_speed_8_6.pdf used on input line 75.
+Package pdftex.def Info: ./figures/num_access_high_low_speed_8_6.pdf used on input line 77.
 (pdftex.def)             Requested size: 452.295pt x 165.50821pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/volume_high_low_speed_8_6.pdf, id=464, 729.63588pt x 266.9975pt>
+<./figures/volume_high_low_speed_8_6.pdf, id=568, 729.63588pt x 266.9975pt>
 File: ./figures/volume_high_low_speed_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/volume_high_low_speed_8_6.pdf>
-Package pdftex.def Info: ./figures/volume_high_low_speed_8_6.pdf used on input line 82.
+Package pdftex.def Info: ./figures/volume_high_low_speed_8_6.pdf used on input line 84.
 (pdftex.def)             Requested size: 452.295pt x 165.50821pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `fig:speed_access_hl' on page 13 undefined on input line 87.
-
-
-LaTeX Warning: Reference `fig:speed_vol_hl' on page 13 undefined on input line 87.
-
-[13.13 <./figures/large_font/speed_vol.pdf> <./figures/large_font/speed_gap.pdf> <./figures/large_font/speed_gap_cdf.pdf
-> <./figures/large_font/speed_per_conn_vol.pdf>] <./figures/app_per_min_8_6.pdf, id=494, 567.36969pt x 426.59375pt>
+<./figures/app_per_min_8_6.pdf, id=572, 567.36969pt x 426.59375pt>
 File: ./figures/app_per_min_8_6.pdf Graphic file (type pdf)
-
-<use ./figures/app_per_min_8_6.pdf>
-Package pdftex.def Info: ./figures/app_per_min_8_6.pdf used on input line 91.
+ <use ./figures/app_per_min_8_6.pdf>
+Package pdftex.def Info: ./figures/app_per_min_8_6.pdf used on input line 93.
 (pdftex.def)             Requested size: 217.09966pt x 163.23341pt.
- <./figures/app_category_per_min_8_6.pdf, id=495, 574.145pt x 429.605pt>
-File: ./figures/app_category_per_min_8_6.pdf Graphic file (type pdf)
 
-<use ./figures/app_category_per_min_8_6.pdf>
-Package pdftex.def Info: ./figures/app_category_per_min_8_6.pdf used on input line 92.
+<./figures/app_category_per_min_8_6.pdf, id=573, 574.145pt x 429.605pt>
+File: ./figures/app_category_per_min_8_6.pdf Graphic file (type pdf)
+ <use ./figures/app_category_per_min_8_6.pdf>
+Package pdftex.def Info: ./figures/app_category_per_min_8_6.pdf used on input line 94.
 (pdftex.def)             Requested size: 217.09966pt x 162.4453pt.
 
-
-LaTeX Warning: Reference `fig:speed_app_used' on page 14 undefined on input line 98.
-
-[14.14 <./figures/num_access_high_low_speed_8_6.pdf>]
-<./figures/app_switch_frequency_line_8_6.pdf, id=508, 574.145pt x 426.59375pt>
+<./figures/app_switch_frequency_line_8_6.pdf, id=575, 574.145pt x 426.59375pt>
 File: ./figures/app_switch_frequency_line_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/app_switch_frequency_line_8_6.pdf>
-Package pdftex.def Info: ./figures/app_switch_frequency_line_8_6.pdf used on input line 107.
+Package pdftex.def Info: ./figures/app_switch_frequency_line_8_6.pdf used on input line 109.
 (pdftex.def)             Requested size: 217.09966pt x 161.30666pt.
 
-<./figures/app_category_switch_frequency_line_8_6.pdf, id=509, 574.145pt x 426.59375pt>
+<./figures/app_category_switch_frequency_line_8_6.pdf, id=576, 574.145pt x 426.59375pt>
 File: ./figures/app_category_switch_frequency_line_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/app_category_switch_frequency_line_8_6.pdf>
-Package pdftex.def Info: ./figures/app_category_switch_frequency_line_8_6.pdf used on input line 108.
+Package pdftex.def Info: ./figures/app_category_switch_frequency_line_8_6.pdf used on input line 110.
 (pdftex.def)             Requested size: 217.09966pt x 161.30666pt.
-
-
-LaTeX Warning: Reference `fig:speed_app_switch' on page 15 undefined on input line 113.
-
-
-LaTeX Warning: Reference `fig:speed_app_used' on page 15 undefined on input line 113.
-
-<./figures/app_overlap_8_6.pdf, id=510, 567.36969pt x 426.59375pt>
+ [16.16]
+<./figures/app_overlap_8_6.pdf, id=588, 567.36969pt x 426.59375pt>
 File: ./figures/app_overlap_8_6.pdf Graphic file (type pdf)
  <use ./figures/app_overlap_8_6.pdf>
-Package pdftex.def Info: ./figures/app_overlap_8_6.pdf used on input line 117.
+Package pdftex.def Info: ./figures/app_overlap_8_6.pdf used on input line 119.
 (pdftex.def)             Requested size: 217.09966pt x 163.23341pt.
 
-<./figures/app_category_overlap_8_6.pdf, id=511, 567.36969pt x 430.35782pt>
+<./figures/app_category_overlap_8_6.pdf, id=589, 567.36969pt x 430.35782pt>
 File: ./figures/app_category_overlap_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/app_category_overlap_8_6.pdf>
-Package pdftex.def Info: ./figures/app_category_overlap_8_6.pdf used on input line 118.
+Package pdftex.def Info: ./figures/app_category_overlap_8_6.pdf used on input line 120.
 (pdftex.def)             Requested size: 217.09966pt x 164.6737pt.
-
-
-LaTeX Warning: Reference `fig:speed_concurrent_apps' on page 15 undefined on input line 123.
-
-
-LaTeX Warning: Reference `fig:speed_concurrent_apps' on page 15 undefined on input line 123.
-
-[15.15 <./figures/volume_high_low_speed_8_6.pdf> <./figures/app_per_min_8_6.pdf> <./figures/app_category_per_min_8_6.pdf
->] [16.16 <./figures/app_switch_frequency_line_8_6.pdf> <./figures/app_category_switch_frequency_line_8_6.pdf> <./figure
-s/app_overlap_8_6.pdf> <./figures/app_category_overlap_8_6.pdf>]
-<./figures/large_font/speed_appcat.pdf, id=565, 1156.32pt x 578.16pt>
+ [17.17 <./figures/num_access_high_low_speed_8_6.pdf> <./figures/volume_high_low_speed_8_6.pdf>] <./figures/large_font/s
+peed_appcat.pdf, id=609, 1156.32pt x 578.16pt>
 File: ./figures/large_font/speed_appcat.pdf Graphic file (type pdf)
- <use ./figures/large_font/speed_appcat.pdf>
-Package pdftex.def Info: ./figures/large_font/speed_appcat.pdf used on input line 140.
+
+<use ./figures/large_font/speed_appcat.pdf>
+Package pdftex.def Info: ./figures/large_font/speed_appcat.pdf used on input line 142.
 (pdftex.def)             Requested size: 452.28629pt x 216.80946pt.
-)
-(conclude.tex) (main.bbl
+ [18.18 <./figures/app_per_min_8_6.pdf> <./figures/app_category_per_min_8_6.pdf> <./figures/app_switch_frequency_line_8_
+6.pdf> <./figures/app_category_switch_frequency_line_8_6.pdf>])
+(limitation.tex [19.19 <./figures/app_overlap_8_6.pdf> <./figures/app_category_overlap_8_6.pdf> <./figures/large_font/sp
+eed_appcat.pdf>]) (conclude.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20.20] (main.bbl
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 48.
- [17.17 <./figures/large_font/speed_appcat.pdf>]
-Underfull \hbox (badness 5189) in paragraph at lines 81--87
+(Font)              scaled to size 8.0pt on input line 49.
+
+Underfull \hbox (badness 5189) in paragraph at lines 93--99
 []\OT1/LinuxLibertineT-TLF/m/n/8 (+20) Ericsson. 2016.  Er-ic-s-son Mo-bil-ity Re-port.  (Feb. 2016).   []$häp : / / www
  . ericsson . com / res / docs / 2016 / mobility-[]report /
  []
 
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 8.0pt on input line 193.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18.18])
-
-Package natbib Warning: There were undefined citations.
-
-[19.19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
+ [21.21]) [22.22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: BF796A884B8F0DEE82809BF494A837DF;3794
-(rerunfilecheck)             After:  63D7A96B0FF5D38281042D9CB5F902AA;3731.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 15A30A6F32D77E7244CD82CF0DF95892;5456.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 19098 strings out of 493333
- 291415 string characters out of 3139182
- 408448 words of memory out of 3000000
- 21634 multiletter control sequences out of 15000+200000
- 105723 words of font info for 356 fonts, out of 3000000 for 9000
+ 19183 strings out of 493333
+ 293261 string characters out of 3139182
+ 409396 words of memory out of 3000000
+ 21683 multiletter control sequences out of 15000+200000
+ 110375 words of font info for 371 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,18n,94p,1436b,2686s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.caption.15} has been referenced but does not exist, replaced by a fixe
-d one
-
-pdfTeX warning (dest): name{subfigure.9.5} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subfigure.9.4} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subfigure.9.3} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subfigure.9.2} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subfigure.9.1} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.9} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.8} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.6} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.17} has been referenced but does not exist, replaced by a fixed one
-
-{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-ot1-4.enc}{C:/Users/Zheng Lu/AppData/Roamin
-g/MiKTeX/2.9/fonts/enc/dvips/newtx/libertinealt.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
-ine/lbtn_xogrpz.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2
-.9/fonts/enc/dvips/libertine/lbtn_afusau.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbt
-n_naooyc.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{C:/Users/Zheng Lu/
-AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts
-/enc/dvips/libertine/lbtn_c6xmqr.enc}<C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/inconsolata/Incons
-olata-zi4r.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/Zhe
-ng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTe
-X/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/li
-bertine/LinLibertineTB.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTI.pfb
-><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/fxlri-5letters.pfb><C:/Users/Zheng Lu/AppData/Ro
-aming/MiKTeX/2.9/fonts/type1/public/newtx/fxlri-7letters.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/p
-ublic/txfonts/rtxmi.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/rtxmi7.pfb><C:/Users/Zhen
-g Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/
-type1/public/txfonts/txsyc.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txsys.pfb><C:/User
-s/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/zxlr.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fo
-nts/type1/public/newtx/zxlri.pfb>
-Output written on main.pdf (19 pages, 2443308 bytes).
+ 60i,18n,94p,1423b,2684s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-ot1-4.enc}{C:/Users/Zheng L
+u/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/newtx/libertinealt.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/
+enc/dvips/libertine/lbtn_xogrpz.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/Zheng Lu/AppData/
+Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_afusau.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvi
+ps/libertine/lbtn_naooyc.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{C:
+/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{C:/Users/Zheng Lu/AppData/Roaming/
+MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_c6xmqr.enc}<C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/in
+consolata/Inconsolata-zi4r.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumT.p
+fb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/Zheng Lu/AppDa
+ta/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts
+/type1/public/libertine/LinLibertineTB.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/Li
+nLibertineTI.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/fxlri-5letters.pfb><C:/Users/Zhe
+ng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/fxlri-7letters.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2
+.9/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/rtxmi7.pf
+b><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Zheng Lu/AppData/Roaming/M
+iKTeX/2.9/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/tx
+sys.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/zxlr.pfb><C:/Users/Zheng Lu/AppData/Roami
+ng/MiKTeX/2.9/fonts/type1/public/newtx/zxlri.pfb>
+Output written on main.pdf (22 pages, 2509120 bytes).
 PDF statistics:
- 758 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
- 44841 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 852 PDF objects out of 1000 (max. 8388607)
+ 176 named destinations out of 1000 (max. 500000)
+ 46451 words of extra memory for PDF output out of 51595 (max. 10000000)
 

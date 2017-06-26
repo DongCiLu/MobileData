@@ -1,0 +1,18 @@
+\change{\section{Limitation}}
+\label{limitation}
+
+\change{We discuss three limitations of our work in this section. The first one is that our speed estimation method does not consider WiFi traffic. The second one is that our dataset only have limited time length and location area. The last one is that our speed estimation algorithm filtered out users that do not frequently move nor frequently use cell phone data networks.}
+
+\change{\subsection{(M4) WiFi data for speed estimation}}
+
+\change{Our speed estimation algorithm is solely based on the coarse-grained location information from cell phone data access traces. Although WiFi data is becoming more and more popular and its availability has greatly increased during the last decade, cell phone network still have better coverage compared to WiFi networks. Moreover, users on cell phone networks usually have better speed diverges compared to users using WiFi. So it's more valuable to study the usage pattern under different speed.}
+
+\change{The coverage patterns of WiFi APs are very different from cell phone towers. They are usually heavily overlapped with each other in certain area and do not have any coverage on other areas. Due to these reasons, our speed estimation algorithms cannot be directly applied to WiFi data. However, WiFi APs usually have smaller coverage than cell phone towers. Compared to cell phone data, location information in WiFi data usually have better accuracy. It is possible to improve the accuracy of speed estimation of our algorithm with additional WiFi data. We are planning to pursue this line of research in our future work.}
+
+\change{\subsection{(M2b, R1-3) Limitation of dataset}}
+
+\change{There are two main limitations of our dataset. First, it only contains cell phone data of a three-hour period during a Sunday evening. With such a short time period, we are not able to perform in-depth study on temporal or spatial analysis, \eg there is a significantly lack of data in office area. Second, although it contains data from three cities, they are all from same country and they are actually quiet near from each other. So, the result presented in Section~\ref{experiments} might be biased because of these two limitations. Nevertheless, the speed estimation method can be easily applied to similar datasets from other areas of any given time period. Actually, in our evaluation section, we use a smaller dataset from a whole different area to verify the performance of our speed estimation algorithm. Similar procedure can be used to study usage patterns with temporal and spatial contexts in those datasets without much difficulty. To this end, our experimental study serves more like a show case that reveals there are certain patterns between user's mobile data usage and their speed.}
+
+\change{\subsection{(M2c) Limitation of speed estimation}}
+
+\change{Our speed estimation algorithm utilize passing-boundary events as building blocks. This technique require users have visited at least three towers (can be repeated, \ie A to B to A) in their trace. Also, the threshold in travel time will filtered out users that do not frequently access mobile networks. These limitations are introduced because of the nature of this kind of datasets, \ie coarse-grained location information and irregular time intervals. With tower coordinates as the only location information, it is almost impossible to infer user location in a certain cell phone tower coverage area. So for a trace that have only visited less than three towers, the uncertain of travel distances will undoubtedly make the speed estimates very inaccurate. Similarly, the uncertain of travel time of users who do not frequently use mobile network will also introduce large errors for speed estimates.}

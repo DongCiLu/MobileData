@@ -1,0 +1,75 @@
+\newpage
+\begin{verbatim}
+>> RESPONSE TO META-REVIEW <<
+
+>  1. (R1) Describe how the data was collected. Who were involved? How long
+>  the data was collected? When the data was collected? Is it cell data the
+>  only collected data or was WiFi also collected?
+\end{verbatim}
+
+Our dataset is collected by a major mobile carrier in China at the cell phone tower side. All active GSM data access during a three-hour period from 6pm to 9pm on a Sunday at September 2014 were recorded. Unfortunately, the dataset only contains cellular data without any WiFi data. 
+
+\change{We mark the related change in paper as M1.} 
+
+\begin{verbatim}
+> 2. (R1 and R2) The authors should address the generality of the proposed
+> algorithm as a limitation. Generally, smartphone users use both cellular
+> and wifi networks in other areas. The current analysis model excludes
+> many contexts of users such as location, time, individual context, etc.
+> In order to understand the resulting data, it is very important to know
+> about moving speed with respect to users and their culture.
+\end{verbatim}
+
+a. WiFi networks.
+Our response to WiFi related comments is listed under meta-review comment 4 (M4) below.
+
+b. Time and Location contexts.
+Due to the short time period of our dataset, it is not feasible for us to perform in-depth temporal or spatial analysis. We state this limitation in our new Section~\ref{limitation}.
+
+\change{We mark the related change in paper as M2b.} 
+
+c. Individual context.
+We agree that our results only represent part of users who frequently moved and use mobile networks because of limitations in our dataset, i.e., coarse-grained location information and irregular time intervals. We state this limitation in our new limitation section.
+
+\change{We mark the related change in paper as M2c.} 
+
+\begin{verbatim}
+>  3. (R2) Speed estimation algorithm is not proved yet. The authors should
+>  demonstrate that their approach to estimate intra-cell movement speed is
+>  accurate and therefore can be reliable used for the correlation analysis.
+>  Many assumptions in estimating moving speed are made without much
+>  explanation. These assumptions should be proved and discussed in detail.
+>  In addition, the classes of moving speed should be analyzed and discussed
+>  in detail.
+\end{verbatim}
+
+Since it is not feasible for us to collect ground truth of user mobility in our dataset, we use a similar but much smaller dataset to perform a brief evaluation of our speed estimation algorithm. This dataset contains both cell phone data and GPS traces. We use the GPS as ground truth for the evaluation. %However, due to the small amount of data available, we were not able to perform an in-depth evaluation of our speed estimation algorithm.
+
+\change{We mark the related change in paper as M3.} 
+
+\begin{verbatim}
+> 4. (R1 and R2) The authors should discuss or demonstrate the implications
+> of considering cellular traffic only on the results presented in this
+> work. WiFi usage could be a major limitation of the generalization of the
+> study.
+\end{verbatim}
+
+Although WiFi handles half of the mobile data traffic and more than half of time users are connected to WiFi, cell phone network have much better coverage and user mobility diversity. It is more meaningful to study user mobility under cellular traffic. We do acknowledge that the lack of WiFi data is a limitation of our work and that our current speed estimation algorithm cannot be directly applied to WiFi data. However, incorporate WiFi data will change our speed estimation algorithm significantly and it is very hard to find WiFi data on a whole city scale. So we give possible solutions in our limitation section and are planning to solve it in our future works.
+
+\change{We mark the related change in paper as M4.} 
+
+\begin{verbatim}
+>  5. Suggested References:
+>  [1] Kyunghan Lee,Joohyun Lee,Yung Yi,Injong Rhee, and Song Chong. 2013.
+>  Mobile Data Offloading: How Much can WiFi Deliver? IEEE/ACM Transactions
+>  On Networking 21, 2 (2013), 536551.
+>
+>  [2] Paul Baumann and Silvia Santini. 2014. How the availability of Wi-Fi
+>  connections influences the use of mobile devices. In Proceedings of the
+>  2014 ACM International Joint Conference on Pervasive and Ubiquitous
+>  Computing Adjunct Publication - UbiComp ’14 Adjunct. (2014), 367372.
+\end{verbatim}
+
+We have added all suggested refereces and discussed them in related works section.
+
+\change{We mark the related change in paper as M5.} 

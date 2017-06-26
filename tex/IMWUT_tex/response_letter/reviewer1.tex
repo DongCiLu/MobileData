@@ -1,0 +1,53 @@
+\newpage
+\begin{verbatim}
+>> RESPONSE TO REVIEWER 1 <<
+
+> Although the authors shows interesting results, there are several
+> limitations to be impored. First of all, I’m wondering how the data was
+> collected. The authors mainly describes the volume of dataset. However,
+> it is very important to know about how the data was collected. The
+> population of the dataset might be affected by the culture  and types of
+> users.
+\end{verbatim}
+
+Please see response to meta-review comment 1.
+
+\begin{verbatim}
+>  Second, the proposed methodology and analysis are too general to be
+>  applied to understand smartphone app usage. This is because the contexts
+>  users use their smartphones are blurred with moving speed. Generally,
+>  user behaviours are divided into moving, sitting and staying at home or
+>  office and also related to time of day. Users spend much time on using
+>  smartphone when waiting  or sitting for something. The usage patterns are
+>  also related to locations such as home or office or stores. Furthermore,
+>  the results could not represent the significant part of users since usage
+>  patterns are very diverse according to users. As the authors mentioned
+>  with Fig 1, the data was mainly from those who frequently moved and used.
+>  I think that the moving speed should be related  to more contexts such as
+>  time and location. It might be also interesting to see the difference
+>  between inter-cell moving and staying within a cell.
+\end{verbatim}
+
+Please see response to meta-review comment 2.
+
+\begin{verbatim}
+> Third,  I think that the results are very limited to specific areas.
+> Although the data were  from three cities and the size of data is
+> comparable with other countries, the results are only for the China. I
+> think that the Fig 13 ~ 15 are not meaningful for understanding general
+> usage patters, but for three cities of China.  The authors need to
+> describe the limitation of their analysis and method.
+\end{verbatim}
+
+Agree. We discuss this in our new limitation section. The results may be limited to specific areas. However, the speed estimation method can be easily applied to similar datasets from other areas. Similar procedure can be used to study usage patterns in those datasets without much difficulty.
+
+\change{We mark the related change in paper as R1-3.}
+
+\begin{verbatim}
+> Lastly, I would like to see how the authors dealt with the massage
+> smartphone usage data.
+\end{verbatim}
+
+We use Python to analyze our dataset. More specifically, we use voronoi package from Scipy to construct voronoi maps with tower coordinates. We use another Python package called shapely to calculate various geometry values in our computation of distance lower bound. All analysis are carried out on a single Cloudlab c8220 server with two 10-core 2.2GHz E5-2660 processors and 256GB memory.
+
+\change{We mark the related change in paper as R1-4.}
