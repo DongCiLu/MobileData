@@ -1,0 +1,117 @@
+\newpage
+\begin{verbatim}
+>> RESPONSE TO REVIEWER 2 <<
+ 
+>  ## 1. Motivation for how the results of this work can be used and their
+>  generalization.
+>
+>  The authors present correlations between user movement speed and other
+>  features such as number of applications used, traffic volume, idle time,
+>  etc.
+>  The authors motivate such findings with: "Understanding such
+>  correlations, if any, could provide useful contextual information for
+>  relevant and accurate app recommendation and ad delivery. For example, if
+>  we find out hiking hobbyists use certain apps considerably more often,
+>  then such apps may be more useful venues for ad delivery for equipment
+>  makers for hiking activities."
+>
+>  However, from the findings presented in this work I only see that Fig16
+>  supports the aforementioned motivation by providing insights about the
+>  correlation between movement speed and app categories.
+>  Providing stronger / additional arguments why all the other observations
+>  are relevant would help the authors to increase the value of this work.
+\end{verbatim}
+
+(R2-1) We appreciate the insightful suggestions. We have added additional arguments on the observations and their support for the conclusions in the paper. The changes can be found on page 2 in section 1. 
+
+\begin{verbatim}
+>  Furthermore, as mentioned in the paper (however, only once I guess), the
+>  traces used for this work cover cellular communication only.
+>  As the authors have pointed out, part of the communication might be
+>  handled over Wi-Fi.
+>  In recent studies, authors have observed that over 60% of the time users
+>  are connected to Wi-Fi [1] and that half of the traffic is typically
+>  handled over Wi-Fi [2].
+>
+>  So the important question at this point is: how representative are the
+>  results presented in this work given the fact that they consider cellular
+>  app usage and traffic only?
+\end{verbatim}
+
+Thank you for your comments. 
+Please see response to meta-review comment 2a.
+
+\begin{verbatim}
+> ## 2. My second concern is about the performance in estimating movement
+>  speed that has a direct influence on the results presented in this work.
+>
+>  To estimate intra-cell speed, the authors propose a novel algorithm that
+>  is based on a set of assumptions such as that users move with a constant
+>  speed (4.1) or with a "straight line trajectory" (4.3).
+>  The resulting computation of the movement speed is therefore a direct
+>  consequence of the aforementioned assumptions and the introduced
+>  approach.
+>  Therefore, the results presented in this work rely on the quality of this
+>  computation.
+>
+>  The results presented in this work show a positive correlation (Fig10a)
+>  between movement speed and traffic volume / sec. as well as a negative
+>  correlation (Fig10b) between the idle time and speed.
+>  The conclusion is that the faster a user passes a given cell, the more
+>  bytes/s she will generate and the smaller the idle time intervals are.
+>  So to make sure that these insights indeed cover a valid collection
+>  between movement speed and other features, it is mandatory to show that
+>  the aforementioned assumptions hold, in general, and the movement speed
+>  estimation is accurate, to some extent, allowing to make conclusions from
+>  the experiments.
+>
+>  Addressing this shortcoming might for instance include an evaluation of
+>  the approach on a data set that contains GPS and cellular data.
+>  There are several publicly available data sets that might be helpful at
+>  this stage (reality mining, nokia, lifemap, etc.).
+>  Alternatively, running a small custom study to verify the assumptions and
+>  get quantitative evidence that movement speed estimations are accurate,
+>  might also be an option.
+>
+>  Without showing that the novel approach presented in this work to compute
+>  movement speed produces reliable estimates, it is at least possible that
+>  to some extent the insights presented in this work result from the
+>  inaccurate movement speed estimations.
+\end{verbatim}
+
+We really appreciate your constructive comments. We indeed agree that we need to demonstrate that the speed estimations to be correct. To achieve this goal, following this comment, we used a dataset collected by Intel Placelab 
+to perform additional evaluations of our speed estimation algorithm. This dataset contains both cell phone data and GPS traces. We used the GPS data as the ground truth for  evaluating our speed estimation algorithm that utilizes cell phone data only. Our results show that even though the dataset was collected from a different country (US), our speed estimation algorithm worked well with same set of parameters as those used in our experiment section. We add a new evaluation section to show the results.  The changes are available in Section 5 on Page 12.  We hope that by showing that the estimation algorithm can be applied to different datasets, we are able to say with more confidence that the conclusions drawn from the city-level datasets are more reliable. 
+
+\begin{verbatim}
+> ## Minor comments:
+>  - Please try to put Figs and Listings on the same page as the text
+>  which refers to them
+>  - Inconsistent writing of PBE in Sec 4.1 and Sec 4.2
+>  - Potential naming (variables) inconsistencies between Alg1 and Sec 4.2
+>  - Fig10a y-axis label: is it not supposed to be "bytes/sec" as
+>  explained in the corresponding section?
+>  - Sec 5.3: how do you define "a data access". is it a single CDR in
+>  the data set?
+>  - What is the overall value / take-home message of Fig11 and Fig12? Is
+>  it not better to have relative values if the number of instances differ?
+>  - Fig14 and Fig15 should be a bit smaller to match the font size of the
+>  text
+\end{verbatim}
+
+Thank you for identifying these problems. 
+We have corrected these problems accordingly. 
+%We are sorry that we are not able to use red color to highlight some changes.
+
+\begin{verbatim}
+>  Suggested References:
+>  [1] Kyunghan Lee,Joohyun Lee,Yung Yi,Injong Rhee, and Song Chong. 2013.
+>  Mobile Data Offloading: How Much can WiFi Deliver? IEEE/ACM Transactions
+>  On Networking 21, 2 (2013), 536551.
+>
+>  [2] Paul Baumann and Silvia Santini. 2014. How the availability of Wi-Fi
+>  connections influences the use of mobile devices. In Proceedings of the
+>  2014 ACM International Joint Conference on Pervasive and Ubiquitous
+>  Computing Adjunct Publication - UbiComp '14 Adjunct. (2014), 367372.
+\end{verbatim}
+
+Please see response to meta-review comment 5. We have added all suggested references and discussed them in the related work section.  These changes can be found in Section 2 on Page 4 of the paper.
