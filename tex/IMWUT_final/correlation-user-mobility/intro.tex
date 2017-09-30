@@ -1,0 +1,100 @@
+\section{Introduction}\label{intro}
+
+In the past decade, the use of smartphones has grown tremendously among consumers.
+According to a recent report~\cite{Ericsson}, there were 3.4 billion smartphone users worldwide,
+and the accumulated mobile data traffic reached 120 exabytes in 2015.
+Alongside this explosive growth in mobile data traffic is the popularity of smartphone apps, such as those served by Google Play and Apple Store,
+whose number has exceeded 1.5 million by July 2015~\cite{Statista}.
+It is estimated that people spend as much as 30 hours monthly on average on these apps,
+a growth of over 65 percent compared to 2013~\cite{Nielsen}.
+
+Recent research has invested considerable efforts to understand smartphone app usage behavior, which can inform app developers, mobile advertisers, and network service providers~\cite{xu2011identifying,yang2015characterizing}.
+For example, both temporal patterns (\eg individual app usage histories) and
+spatial patterns (\eg location contexts) have been extensively studied~\cite{meng2014analyzing}.
+Their results have enabled novel applications,
+such as smartphone app launching prediction services~\cite{yan2012fast}
+and location-aware event recommendations.
+
+These studies, in spite of their usefulness, usually require fine-grained data. 
+%In reality, this limitation prevents scalability, meaning that such studies cannot be applied in a large scale due to the difficulty of collecting data traces. Therefore, 
+When only coarse-grained datasets are available, smart algorithms are needed to extract useful information. % for analysis purposes.
+In particular, as the cellular data are commonly collected, 
+it would be useful to design processing algorithms to extract and exploit useful mobility features 
+%fine-grained user mobility traces 
+from these datasets. 
+At a large-scale (i.e., city-wide), we 
+%In this paper, we focus on 
+would like to understand user mobility, and investigate how this feature correlates with the usage patterns of smartphone apps.
+Understanding such correlations, if any, can provide useful insights on how users are using their smartphones, such as the unique characteristics of smartphone usage for users on different mobility modes, including stationary, walking, driving, or taking buses. Knowing such correlations can not only help app designers analyze and improve their apps in a more guided manner but also provide much-needed assistance to network operators to optimize in-the-field operations. Finally, our study can also provide valuable results for commercial use. For example, by knowing the users' app preference on different mobility modes, advertisers can deliver more relevant ads %contextual information 
+based on the current mobility mode of a user. % in a more accurate manner. Therefore, they can  achieve more relevant and accurate app recommendation and ad delivery goals. 
+
+% contextual information for relevant and accurate app recommendation and ad delivery.
+% For example, if we find out hiking hobbyists use certain apps considerably more often,
+% then such apps may be more useful venues for ad delivery for equipment makers for hiking % activities.
+
+Unfortunately, previous work on this topic has only investigated this problem in highly limited and controlled contexts,
+taking into account the usage history of a small set of users.
+For example, a few works have addressed the problem of transportation mode inference,
+%where the goal is to find out whether a user is riding a bus or taking a taxi, among other possibilities.
+%Such work usually assumes that additional 
+with location information collected using more accurate 
+hardware (\eg GPS, sensors) %is available,
+%and is carried out for 
+from a small group of users in controlled experiments~\cite{ohashi2014automatic, ryder2009ambulation, zheng2010understanding, biljecki2013transportation, stenneth2011transportation, waga2012detecting, widhalm2012transport, Reddy:2010:UMP:1689239.1689243}.
+Later work suggested that it may be possible to use cell tower communications to monitor users' mobility indirectly~\cite{rose2006mobile},
+where efforts have been focused on inferring users' trajectories~\cite{Alsolami2012Auth,jiang2013review}
+or transportation mode~\cite{wang2010transportation,bekhor2015investigation} using cell-phone traces
+(\eg Call Detail Records, handover data) that do not directly contain location information. 
+%Such approaches are more scalable, as they do not require additional hardware resources and better respect users' privacy.
+A limitation of these approaches, however, is that they are usually small-scale by nature, and the 
+data collected were much cleaner 
+%as they were collected from a small number of users in a more 
+given the controlled environment, making the proposed techniques impractical  for real-world large-scale data. 
+%and usually has ground-truth data collected for a user as validation methods for their approaches.
+Our work follows the latter line of research, using large-scale cell-phone tower traces, with significant difference. 
+%However, our dataset and the corresponding methodology are significantly different.
+First, our dataset consists of a truly large population,
+where we have access to mobile data access histories of millions of users in three cities that cover thousands of square miles.
+%The number of users is perhaps more than the population of certain countries in the world.
+Second, %due to privacy concerns, the 
+%our dataset is fundamentally coarse-grained,
+%meaning that \change{we only know users' nearby cell towers, but we do not know the exact geo-coordinations of these users.}  
+%Therefore, novel data processing methods are urgently needed.
+%Finally, 
+our research goal is to reveal large-scale, population-level correlations,
+if any, between user mobility and app usage patterns,
+a goal that has not been addressed in any of previous research work.
+
+We addressed the following two challenges in our work.
+First, to infer user mobility with cell-phone traces,
+we needed to filter the location history to obtain accurate estimates. In our dataset, the only location information available was the %communication history between a customer and a cell tower. Fortunately, we have the precise 
+location of each cell tower. By communication principles, we know that a user's phone typically contacts towers with the best signal reception, which usually are the nearest ones. 
+After surveying previous work on estimating trajectories based on similar datasets~\cite{smoreda2013spatiotemporal, hoteit2014estimating, widhalm2015discovering, Alsolami2012Auth, jiang2013review} or finding mobility motifs~\cite{wang2014mobile, gambs2012next}, we could not find a technique that suited our needs as their results were clearly still too coarse-grained for our data. %One reason is the dataset difference: their data mostly are sparse compared to ours. 
+For example, one study was based on users who performed daily commute or took city-to-city long-distance trips. In contrast, our data were in dense urban areas where users employed a mixture of transportation modes ranging from walking, bicycles, to buses and cars (railway transportation was not present in our dataset). Therefore, we needed to develop a novel method to estimate more complicated user mobility behaviors for our dataset.
+Second, to effectively correlate app usage history with mobility patterns, we had to strike a tradeoff between the most popular apps and the sparingly used ones. More specifically, we found that a majority of users used ``heavy-hitter'' apps irrespective of their mobility modes. Inferring such correlations were less meaningful. Therefore, we focused on app groups where data exhibit differentiated popularity for users with different moving speeds, a task that was considerably more challenging than simply performing correlation analysis between all apps and all users without differentiation. %Therefore, our methods need to be customized for the needs of this application analysis task.
+We emphasize, however, that due to the data limitations (i.e., being extremely coarse-grained and heterogeneous and the absence of ground truth),
+all our conclusions are, at best, educated guesses that are based on real-world data. We believe such results are meaningful and insightful for a wide range of people: app developers, advertisers, network operators, and smartphone users.
+
+The main contributions of this paper can be summarized as follows.
+%\begin{itemize}
+%	\item 
+We designed and evaluated a novel method to infer user speeds with cell-phone traces with low location accuracies. Compared to existing approaches, this method achieved far better and fine-grained estimation with adjustable confidence levels. Specifically, to overcome the problem of location accuracy, our method involved steps to segment traces by pass-boundary events. When a user establishes a new connection with a different tower, and performs intra-cell level zooming and analysis to calculate distance estimates. This method was also robust against issues caused by the uncertain nature of wireless communications, \eg a user located in the overlapped communication coverage area of multiple towers may randomly communicate with each tower, causing cell oscillations that other simple methods cannot easily address.
+%	\item 
+With the more accurate speed estimates, we were able to study the correlation of user mobility with app usage patterns in the real-world environment. 
+Our results revealed correlations of user speed and mobile data access patterns, including data volumes, access frequency, 
+and app choice. 
+%the share of each smartphone app category in the total mobile data traffic, and user preferences of apps under different transportation modes.
+The results are novel in that no previous work, to the best of our knowledge, has gained similar insights or reported findings in this aspect.
+%\end{itemize}
+
+The rest of this paper is organized as follows.
+In Section~\ref{relate}, we describe previous works on user mobility inference and geospatial app usage patterns.
+Section~\ref{data} defines our problem and provides details on the mobile data access trace we use in this paper.
+We describe our speed estimation methodology and design in Section~\ref{approach}.
+An objective evaluation of our speed estimation algorithm is presented in Section~\ref{evaluation}.
+Section~\ref{experiments} explains our findings on the correlation of user speeds and mobile data access patterns.
+We discuss the limitations of our work in Section~\ref{limitation}.
+Finally, we conclude our work in Section~\ref{conclusion}.
+
+
+

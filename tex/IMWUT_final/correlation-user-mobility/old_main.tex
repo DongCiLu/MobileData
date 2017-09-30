@@ -1,0 +1,150 @@
+\documentclass[acmlarge]{acmart}
+
+\usepackage{booktabs} % For formal tables
+
+\usepackage{comment}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{subfigure}
+
+\usepackage{amsmath}
+%\usepackage{algorithm}
+%\usepackage[noend]{algpseudocode}
+\usepackage[lined,linesnumbered,ruled]{algorithm2e}
+\usepackage[flushleft]{threeparttable}
+
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Section}
+\def\subsubsectionautorefname{Section}
+\def\figureautorefname{Fig.}
+\def\subfigureautorefname{Fig.}
+\def\tableautorefname{Table}
+\def\algorithmautorefname{Algorithm}
+\def\equationautorefname{Eqn.}
+
+\newtheorem{Def}{Definition}[section]
+%\def\definitionautorefname{Definition}
+\newcommand{\Defautorefname}{Definition}
+
+\def\on{{on}}
+\def\off{{o\!f\!f}}
+\def\dist{\mathrm{dist}}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\proj}{proj}
+
+\newcommand{\ie}{i.e., }
+\newcommand{\eg}{e.g., }
+\newcommand{\note}[1]{\textbf{\color{red}[***** #1 *****]}}
+\newcommand{\change}[1]{\textbf{\color{blue}#1}}
+%\renewcommand{\note}[1]{}
+
+\newtheorem{case}{Use Case}
+%%\newtheorem{example}{Example}
+
+%\usepackage[ruled]{algorithm2e} % For algorithms
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+
+% Metadata Information
+\acmJournal{JOCCH}
+\acmVolume{9}
+\acmNumber{4}
+\acmArticle{39}
+\acmYear{2010}
+\acmMonth{3}
+\acmArticleSeq{11}
+
+%\acmBadgeR[http://ctuning.org/ae/ppopp2016.html]{ae-logo}
+%\acmBadgeL[http://ctuning.org/ae/ppopp2016.html]{ae-logo}
+
+
+% Copyright
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+% DOI
+%\acmDOI{0000001.0000001}
+
+% Paper history
+%\received{February 2007}
+%\received{March 2009}
+%\received[accepted]{June 2009}
+
+
+% Document starts
+\begin{document}
+% Title portion
+\title[Correlation between User Mobility and App Usage]{Inferring Correlation between User Mobility and App Usage in Massive Coarse-grained Data Traces\\
+\change{List of changes are appended at the end of the paper (page 22)}}
+
+\author{Zheng Lu}
+\affiliation{%
+  \institution{University of Tennessee}
+  \department{Electrical Engineering and Computer Science}
+}
+\email{zlu12@vols.utk.edu}
+\author{Yunhe Feng}
+\affiliation{%
+  \institution{University of Tennessee}
+  \department{Electrical Engineering and Computer Science}
+	%\email{yfeng14@vols.utk.edu}
+}
+\author{Wenjun Zhou}
+\affiliation{%
+	\institution{University of Tennessee}
+  \department{Business Analytics \& Statistics}
+	%\email{wzhou4@utk.edu}
+}
+\author{Xiaolin Li}
+\affiliation{%
+  \institution{Nanjing University}
+  \department{School of Management}
+	%\email{lixl@nju.edu.cn}
+}
+\author{Qing Cao}
+\affiliation{%
+  \institution{University of Tennessee}
+  \department{Electrical Engineering and Computer Science}
+	%\email{cao@utk.edu}
+}
+
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+
+%
+
+\maketitle
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{Z. Lu et al.}
+
+\input{intro}
+\input{relate}
+\input{data}
+\input{approach}
+\input{evaluation}
+\input{experiments}
+\input{limitation}
+\input{conclude}
+
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{refs}
+
+\end{document}
