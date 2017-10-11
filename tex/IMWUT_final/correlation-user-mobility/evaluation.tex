@@ -18,16 +18,24 @@ To make the comparison fair, we used the same parameter settings as those used i
 
 \subsection{Speed Estimation Accuracy}
 
-\autoref{fig:cdf_limited} shows the CDF (cumulative distribution function) of errors for both the filtered speed estimates and the raw speed estimates. Here, we define the speed estimation errors as $e = |(s_{est} - s_{gt})| / s_{gt}$, where $s_{est}$ is the speed estimated by cell phone data and $s_{gt}$ is the ground truth speed calculated by GPS data. By using the absolute value, $e$ is always a positive value. As the value of $e$ can reach very high due to cell oscillations, we set upper limits of the estimated speed, hence on $e$, in \autoref{fig:cdf_limited} to better illustrate the difference of speed estimation errors that fall into reasonable error ranges.
+\change{\autoref{fig:cdf_limited} shows the CDF (cumulative distribution function) of errors for both the filtered speed estimates and the raw speed estimates. Here, we define the speed estimation absolute errors as $e_{abs} = |(s_{est} - s_{gt})|$ and speed estimation relative errors as $e_r = |(s_{est} - s_{gt})| / s_{gt}$, where $s_{est}$ is the speed estimated by cell phone data and $s_{gt}$ is the ground truth speed calculated by GPS data. By using the absolute value, $e_{abs}$ and $e_r$ are always positive values. As the value of $e_{abs}$ and $e_r$ can reach very high due to cell oscillations, we set upper limits of the estimated speed, hence on $e_{abs}$ and $e_r$, in \autoref{fig:cdf_limited} to better illustrate the difference of speed estimation errors that fall into reasonable error ranges.}
+
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.5\linewidth]{./figures/cdf_limited.pdf}
+    %\caption{The CDF of raw speed estimation and filtered speed estimation}
+    %\label{fig:cdf_limited}
+%\end{figure}
 
 \begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\linewidth]{./figures/cdf_limited.pdf}
-    \caption{The CDF of raw speed estimation and filtered speed estimation}
-    \label{fig:cdf_limited}
+\centering
+\subfigure[Empirical CDF of $e_{abs}$.\label{fig:cdf_absolute_limited}]{\includegraphics[width=0.45\linewidth]{./figures/cdf_absolute_limited.pdf}}
+\subfigure[Empirical CDF of $e_{r}$.\label{fig:cdf_limited}]{\includegraphics[width=0.45\linewidth]{./figures/cdf_limited.pdf}}
+\caption{The CDF of absolute errors $e_{abs}$ and relative errors $e_r$ for raw speed estimation and filtered speed estimation}
+\label{fig:cdf_e}
 \end{figure}
 
-As we can see in \autoref{fig:cdf_limited}, the filtered speed estimation significantly outperforms the raw speed estimation in terms of accuracy. About 50\% of the filtered speed estimates have error rates less than $0.2$, while only 25\% of raw speed estimates achieve the same level of accuracy. More than 80\% of filtered speed estimates have error rates less or equal to 0.5, while for raw speed estimates this number is only less than 50\%. On the other end of this figure, observe that there is only less than 5\% of filtered speed estimates with error rates higher than 1, compared to more than 15\% of raw speed estimates.
+\change{As we can see in \autoref{fig:cdf_e}, the filtered speed estimation significantly outperforms the raw speed estimation in terms of accuracy. The highest absolute error for filtered speed estimates is only around 33 km/h while there are about 5\% of raw speed estimates have absolute errors higher than 50 km/h. There are more than 80\% of filtered speed estimates have absolute error less than 10 km/h while only less than 50\% raw speed estimates have this level of accuracy.} For relative errors, about 50\% of the filtered speed estimates have error rates less than $0.2$, while only 25\% of raw speed estimates achieve the same level of accuracy. More than 80\% of filtered speed estimates have error rates less or equal to 0.5, while for raw speed estimates this number is only less than 50\%. On the other end of this figure, observe that there is only less than 5\% of filtered speed estimates with error rates higher than 1, compared to more than 15\% of raw speed estimates.
 
 
 \begin{figure}[h]

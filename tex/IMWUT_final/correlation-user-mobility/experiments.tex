@@ -16,23 +16,25 @@ In the following experiments, we only show results in the speed range from 0 km/
 \centering
 \subfigure[Empirical CDF of speed estimates.\label{fig:speed_cdf}]{\includegraphics[width=0.45\linewidth]{./figures/speed_cdf.pdf}}
 \subfigure[Correlation of speed estimates with data volumes.\label{fig:speed_vol}]{\includegraphics[width=0.45\linewidth]{./figures/large_font/speed_vol.pdf}}
+\caption{The empirical CDF of speed estimates and the correlation of speed estimate with data volumes.}
+\label{fig:speed_cdf_and_vol}
 \end{figure}
 
-\begin{comment}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\linewidth]{./figures/speed_cdf.pdf}
-    \caption{Empirical CDF of speed estimates.}
-    \label{fig:speed_cdf}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\linewidth]{./figures/large_font/speed_vol.pdf}
-    \caption{The correlation of speed estimates with data volumes.}
-    \label{fig:speed_vol}
-\end{figure}
-\end{comment}
+%\begin{comment}
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.5\linewidth]{./figures/speed_cdf.pdf}
+    %\caption{Empirical CDF of speed estimates.}
+    %\label{fig:speed_cdf}
+%\end{figure}
+%
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=0.5\linewidth]{./figures/large_font/speed_vol.pdf}
+    %\caption{The correlation of speed estimates with data volumes.}
+    %\label{fig:speed_vol}
+%\end{figure}
+%\end{comment}
 
 \autoref{fig:speed_vol} shows the results of the correlation of user speed and the average mobile data access volumes per user per second. We demonstrate the data from all three cities combined and each city respectively. The figure shows a clear trend that users are more active in accessing mobile data as the speed increases and the trend holds true for all three cities. In fact, a user with speed estimates of 80-100 km/h could reach an average data volume of 6 times of a low-speed user. Similarly, this trend also holds true for all the cities. Note that these results only show an increase in the mobile data access volume as user speed increases. It does not suggest lower speed users access online contents less frequently. Actually, we believe one reason might be that a large portion of a low-speed user's online needs is already fulfilled by various kind of high-speed connections such as Wifi hotspots. To this end, we reach similar findings with previous work~\cite{yang2015characterizing} on the correlation of user mobility and mobile data access volume, except that the previous work used the number of towers visited by a user as the indicator of user mobility.
 
@@ -53,33 +55,35 @@ We show the average volume for each data access in \autoref{fig:speed_per_conn_v
 
 \subsection{Speed and App Usage}
 
+\change{In this part, we first studied the correlation speed and app usage in the perspective of app switching and concurrently running apps. This can give us more detailed insights about how the user mobility are related to the way users are using their smartphone, e.g., do they concentrate on one app or do they frequently switch between several apps? When we categorize the apps into several categories, we also want to know do the users use same type of apps when they are moving instead of sitting? We have \autoref{fig:speed_app} and \autoref{fig:speed_appcat} to answer this kind of questions.}
+
 According to the mobile service provider, each app in our dataset was assigned to one of 18 categories, as shown in \autoref{table:appcat}. 
 %We first divided estimated user speed at 50km/h into two classes. The low speed class includes transportation modes such as walking, cycling, bus and other low speed vehicles. The high speed class includes mainly high speed vehicles.  
 %We showed the number of data access per app category in \autoref{fig:speed_access_hl} and data volume per app category in \autoref{fig:speed_vol_hl}. In both figures, low speed users have more data access due to large user base. The share for each category holds similar trend for both high and low speed users. We will discuss more details on the contribution of each category to total data access in \autoref{fig:speed_appcat}.
 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{lrr}\hline
-	App Category & \# Apps & Volume (GB) \\
+	\begin{tabular}{lrrll}\hline
+	App Category & \# Apps & Volume (GB) & Example App & Remarks \\
     \hline
-	Instant Messages & 30 & 97.3\\
-	Reading & 101 & 17.6\\
-	Microblog & 43 & 13.0\\
-	Navigation  & 38 & 10.8\\
-	Video  & 63 & 45.2\\
-	Music  & 33 & 27.4\\
-	App Market & 45 & 37.0\\
-	Game  & 106 & 9.2\\
-	Payment & 18 & 1.2\\
-	Comic & 12 & 0.8\\
-	Email & 10 & 1.5\\
-	P2P & 8 & 3.9\\
-	VOIP  & 17 & 0.3\\
-	Multimedia Messages & 2 & 0.3\\
-	Browsing & 558 & 353.5\\
-	Finance  & 25 & 0.7\\
-	Security  & 22 & 5.2\\
-    Others  & 244 & 95.8\\
+	Instant Messages & 30 & 97.3 & Wechat & Including photos and voice records \\
+	Reading & 101 & 17.6 & iReader & Book downloading \& streaming \\
+	Microblog & 43 & 13.0 & Sina Weibo & Various microblog apps \\
+	Navigation  & 38 & 10.8 & Baidu Map & Map service and navigation \\
+	Video  & 63 & 45.2 & Youku & \\
+	Music  & 33 & 27.4 & QQ Music & \\
+	App Market & 45 & 37.0 & App Store & App downloading \\
+	Game  & 106 & 9.2 & Angry Bird & Content downloading, record uploading \\
+	Payment & 18 & 1.2 & Apple Pay & Mobile payment apps \\
+	Comic & 12 & 0.8 & Kuaikan Comic & Comic streaming \\
+	Email & 10 & 1.5 & Gmail & \\
+	P2P & 8 & 3.9 & Bittorrent & P2P downloading \\
+	VOIP  & 17 & 0.3 & Skype & internet phone calls or video chats \\
+	Multimedia Messages & 2 & 0.3 & Caixin & \\
+	Browsing & 558 & 353.5 & Chrome & Webpage, Wechat moments, Qzone \\
+	Finance  & 25 & 0.7 & Flush & Stock, Financial news apps \\
+	Security  & 22 & 5.2 & McAfee & Anti-virus apps\\
+    Others  & 244 & 95.8 & & \\
 % 	Other1 & 237 & 74.7\\
 % 	Other2 &   7 & 21.1\\
 % 	Others & 464 & 118.9\\
@@ -89,58 +93,58 @@ According to the mobile service provider, each app in our dataset was assigned t
 	\label{table:appcat}
 \end{table}
 
-\begin{comment}
-\begin{table}[h]
-	\centering
-	\begin{tabular}{lrrrr}\hline
-    %             &         & \multicolumn{3}{c}{Volume (GB)} \\
-	App Category & \# Apps & Total & Low Speed (filtered) & High Speed (filtered) \\
-     &  & (GB) & (MB, $\le 50$ km/h) & (MB, $> 50$ km/h) \\
-    \hline
-	Instant Messages & 30 & 97.3 & 2040 & 409\\
-	Reading & 101 & 17.6 & 371 & 72\\
-	Microblog & 43 & 13.0 & 270 & 79\\
-	Navigation  & 38 & 10.8 & 326 & 155\\
-	Video  & 63 & 45.2 & \\
-	Music  & 33 & 27.4\\
-	App Market & 45 & 37.0\\
-	Game  & 106 & 9.2\\
-	Payment & 18 & 1.2\\
-	Comic & 12 & 0.8\\
-	Email & 10 & 1.5\\
-	P2P & 8 & 3.9\\
-	VOIP  & 17 & 0.3\\
-	Multimedia Messages & 2 & 0.3\\
-	Browsing & 558 & 353.5\\
-	Finance  & 25 & 0.7\\
-	Security  & 22 & 5.2\\
-    Others  & 244 & 95.8\\
-% 	Other1 & 237 & 74.7\\
-% 	Other2 &   7 & 21.1\\
-% 	Others & 464 & 118.9\\
-    \hline
-            &    &  &  100 & 100 \\
-    \hline
-	\end{tabular}
-	\caption{App categories and data volume distribution}
-	\label{table:appcat}
-\end{table}
-\end{comment}
-\begin{comment}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\linewidth]{./figures/num_access_high_low_speed_8_6.pdf}
-    \caption{The distribution of the number of access per app category with high and low speed users}
-    \label{fig:speed_access_hl}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\linewidth]{./figures/volume_high_low_speed_8_6.pdf}
-    \caption{The distribution of data volume per app category with high and low speed users}
-    \label{fig:speed_vol_hl}
-\end{figure}
-\end{comment}
+%\begin{comment}
+%\begin{table}[h]
+	%\centering
+	%\begin{tabular}{lrrrr}\hline
+    %%             &         & \multicolumn{3}{c}{Volume (GB)} \\
+	%App Category & \# Apps & Total & Low Speed (filtered) & High Speed (filtered) \\
+     %&  & (GB) & (MB, $\le 50$ km/h) & (MB, $> 50$ km/h) \\
+    %\hline
+	%Instant Messages & 30 & 97.3 & 2040 & 409\\
+	%Reading & 101 & 17.6 & 371 & 72\\
+	%Microblog & 43 & 13.0 & 270 & 79\\
+	%Navigation  & 38 & 10.8 & 326 & 155\\
+	%Video  & 63 & 45.2 & \\
+	%Music  & 33 & 27.4\\
+	%App Market & 45 & 37.0\\
+	%Game  & 106 & 9.2\\
+	%Payment & 18 & 1.2\\
+	%Comic & 12 & 0.8\\
+	%Email & 10 & 1.5\\
+	%P2P & 8 & 3.9\\
+	%VOIP  & 17 & 0.3\\
+	%Multimedia Messages & 2 & 0.3\\
+	%Browsing & 558 & 353.5\\
+	%Finance  & 25 & 0.7\\
+	%Security  & 22 & 5.2\\
+    %Others  & 244 & 95.8\\
+%% 	Other1 & 237 & 74.7\\
+%% 	Other2 &   7 & 21.1\\
+%% 	Others & 464 & 118.9\\
+    %\hline
+            %&    &  &  100 & 100 \\
+    %\hline
+	%\end{tabular}
+	%\caption{App categories and data volume distribution}
+	%\label{table:appcat}
+%\end{table}
+%\end{comment}
+%\begin{comment}
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=\linewidth]{./figures/num_access_high_low_speed_8_6.pdf}
+    %\caption{The distribution of the number of access per app category with high and low speed users}
+    %\label{fig:speed_access_hl}
+%\end{figure}
+%
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[width=\linewidth]{./figures/volume_high_low_speed_8_6.pdf}
+    %\caption{The distribution of data volume per app category with high and low speed users}
+    %\label{fig:speed_vol_hl}
+%\end{figure}
+%\end{comment}
 
 
 \begin{figure}[h]
@@ -152,17 +156,18 @@ According to the mobile service provider, each app in our dataset was assigned t
 \subfigure[App category switch frequency\label{fig:switch_app_category}]{\includegraphics[width=0.32\linewidth]{./figures/app_category_switch_frequency_line_8_6.pdf}}
 \subfigure[Average number of concurrently running app categories\label{fig:app_category_overlap}]{\includegraphics[width=0.32\linewidth]{./figures/app_category_overlap_8_6.pdf}}
 \caption{Correlation of user speed and the number of unique apps and app categories used}
+\label{fig:speed_app}
 \end{figure}
 
-\begin{comment}
-\begin{figure}[h]
-    \centering
-		\subfigure[Number of unique apps used per minute\label{fig:app_per_min}]{\includegraphics[width=0.48\linewidth]{./figures/app_per_min_8_6.pdf}}
-		\subfigure[Number of unique app categories used per minute\label{fig:app_cate_per_min}]{\includegraphics[width=0.48\linewidth]{./figures/app_category_per_min_8_6.pdf}}
-    \caption{Correlation of user speed and the number of unique apps and app categories used}
-    \label{fig:speed_app_used}
-\end{figure}
-\end{comment}
+%\begin{comment}
+%\begin{figure}[h]
+    %\centering
+		%\subfigure[Number of unique apps used per minute\label{fig:app_per_min}]{\includegraphics[width=0.48\linewidth]{./figures/app_per_min_8_6.pdf}}
+		%\subfigure[Number of unique app categories used per minute\label{fig:app_cate_per_min}]{\includegraphics[width=0.48\linewidth]{./figures/app_category_per_min_8_6.pdf}}
+    %\caption{Correlation of user speed and the number of unique apps and app categories used}
+    %\label{fig:speed_app_used}
+%\end{figure}
+%\end{comment}
 
 %In this section, we first show in
 \autoref{fig:app_per_min} and \autoref{fig:app_cate_per_min} 
@@ -174,15 +179,15 @@ A user with a speed estimate of 80-100 km/h could use as many as 2 times apps pe
 An explanation might be that for users with high mobility, they may use their phones more often, use more kinds of apps, and be less likely to focus on one app for prolonged periods of time. 
 % Both \autoref{fig:speed_app_used} and \autoref{fig:speed_app_switch} lead to the similar conclusion that unlike low speed users, users with high mobility may use their phones more often, switch between apps more, and be less likely to focus on one app for prolonged periods of time. 
 
-\begin{comment}
-\begin{figure*}
-    \centering
-		\subfigure[App switch frequency\label{fig:switch_app}]{\includegraphics[width=0.48\linewidth]{./figures/app_switch_frequency_line_8_6.pdf}}
-		\subfigure[App category switch frequency\label{fig:switch_app_category}]{\includegraphics[width=0.48\linewidth]{./figures/app_category_switch_frequency_line_8_6.pdf}}
-    \caption{Correlation of user speed and the frequencies of app and app category switch}
-    \label{fig:speed_app_switch}
-\end{figure*}
-\end{comment}
+%\begin{comment}
+%\begin{figure*}
+    %\centering
+		%\subfigure[App switch frequency\label{fig:switch_app}]{\includegraphics[width=0.48\linewidth]{./figures/app_switch_frequency_line_8_6.pdf}}
+		%\subfigure[App category switch frequency\label{fig:switch_app_category}]{\includegraphics[width=0.48\linewidth]{./figures/app_category_switch_frequency_line_8_6.pdf}}
+    %\caption{Correlation of user speed and the frequencies of app and app category switch}
+    %\label{fig:speed_app_switch}
+%\end{figure*}
+%\end{comment}
 
 In 
 \autoref{fig:switch_app} and \autoref{fig:switch_app_category} 
@@ -191,15 +196,15 @@ we show the frequency of app switch and app category switch. They both follow th
 \autoref{fig:app_per_min} and \autoref{fig:app_cate_per_min}, % \autoref{fig:speed_app_used}, 
 we can see that although low speed users switch apps more frequently, they only switch among fewer number of apps.
 
-\begin{comment}
-\begin{figure*}
-    \centering
-		\subfigure[Average number of concurrently running apps\label{fig:app_overlap}]{\includegraphics[width=0.48\linewidth]{./figures/app_overlap_8_6.pdf}}
-		\subfigure[Average number of concurrently running app categories\label{fig:app_category_overlap}]{\includegraphics[width=0.48\linewidth]{./figures/app_category_overlap_8_6.pdf}}
-    \caption{Correlation of user speed and the number of concurrently running apps and app categories}
-    \label{fig:speed_concurrent_apps}
-\end{figure*}
-\end{comment}
+%\begin{comment}
+%\begin{figure*}
+    %\centering
+		%\subfigure[Average number of concurrently running apps\label{fig:app_overlap}]{\includegraphics[width=0.48\linewidth]{./figures/app_overlap_8_6.pdf}}
+		%\subfigure[Average number of concurrently running app categories\label{fig:app_category_overlap}]{\includegraphics[width=0.48\linewidth]{./figures/app_category_overlap_8_6.pdf}}
+    %\caption{Correlation of user speed and the number of concurrently running apps and app categories}
+    %\label{fig:speed_concurrent_apps}
+%\end{figure*}
+%\end{comment}
 
 We then further extended our study by investigating the correlation of the number of concurrently running apps and app categories with estimated user speed. The results are shown in \autoref{fig:app_overlap} and \autoref{fig:app_category_overlap}. %\autoref{fig:speed_concurrent_apps}. 
 Although the actual launch time and closing time for each running app are unavailable, we use the network access data to infer such information. For each app, we treat the time of the first data access as the launch time of an app. If the app stops accessing network for a certain period (referred to as the closing threshold), we record the last network access time as the closing time for the app. We chose 10 seconds as the closing threshold to plot

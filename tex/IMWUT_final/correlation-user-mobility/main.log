@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.26)  29 SEP 2017 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.26)  6 OCT 2017 10:58
 entering extended mode
 **./main.tex
 (main.tex
@@ -998,91 +998,81 @@ Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
  Excluding 'CCSXML' comment.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 194.
-LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 194.
+(Font)              scaled to size 14.4pt on input line 193.
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 193.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxbiolinumt-tlf.fd"
 File: T1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 194.
+(Font)              scaled to size 14.4pt on input line 193.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 194.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 193.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 194.
+(Font)              scaled to size 14.4pt on input line 193.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 194.
+(Font)              scaled to size 12.0pt on input line 193.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 194.
+(Font)              scaled to size 12.0pt on input line 193.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 194.
+(Font)              scaled to size 10.0pt on input line 193.
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 193.
+
+("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\ts1linuxlibertinet-tlf.fd"
+File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 193.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 193.
+ (abstract.tex)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 193.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 193.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 193.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 194.
+(Font)              scaled to size 9.0pt on input line 193.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 194.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 194.
+(Font)              scaled to size 7.3pt on input line 193.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Try loading font information for TS1+LinuxBiolinumT-TLF on input line 194.
+) (intro.tex
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+ [1.1{C:/Users/Zheng Lu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for TS1+LinuxBiolinumT-TLF on input line 77.
 
 ("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\ts1linuxbiolinumt-tlf.fd"
 File: TS1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 194.
+(Font)              scaled to size 10.0pt on input line 77.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 194.
-LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 194.
-
-("C:\Users\Zheng Lu\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\ts1linuxlibertinet-tlf.fd"
-File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
-)
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 194.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 194.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 194.
- (abstract.tex)
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 194.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 194.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 194.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 194.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 194.
- (intro.tex
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 1.
-[1.1{C:/Users/Zheng Lu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 77.
  [2.2]) (relate.tex
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 9.
+
 Underfull \vbox (badness 4927) has occurred while \output is active []
 
  [3.3]) (data.tex
@@ -1144,8 +1134,6 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 41.
 [7.7 <./figures/system_overview.pdf>]
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 77.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 80.
  [8.8 <./figures/passing_boundary.pdf>]
@@ -1196,114 +1184,115 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
 ) (evaluation.tex [11.11]
-[12.12] <./figures/cdf_limited.pdf, id=435, 578.16pt x 433.62pt>
+[12.12] <./figures/cdf_absolute_limited.pdf, id=435, 578.16pt x 433.62pt>
+File: ./figures/cdf_absolute_limited.pdf Graphic file (type pdf)
+ <use ./figures/cdf_absolute_limited.pdf>
+Package pdftex.def Info: ./figures/cdf_absolute_limited.pdf used on input line 32.
+(pdftex.def)             Requested size: 203.53136pt x 152.64264pt.
+
+<./figures/cdf_limited.pdf, id=436, 578.16pt x 433.62pt>
 File: ./figures/cdf_limited.pdf Graphic file (type pdf)
  <use ./figures/cdf_limited.pdf>
-Package pdftex.def Info: ./figures/cdf_limited.pdf used on input line 25.
-(pdftex.def)             Requested size: 226.14749pt x 169.60735pt.
+Package pdftex.def Info: ./figures/cdf_limited.pdf used on input line 33.
+(pdftex.def)             Requested size: 203.53136pt x 152.64264pt.
 
-<./figures/error_bar.pdf, id=437, 578.16pt x 433.62pt>
+<./figures/error_bar.pdf, id=438, 578.16pt x 433.62pt>
 File: ./figures/error_bar.pdf Graphic file (type pdf)
  <use ./figures/error_bar.pdf>
-Package pdftex.def Info: ./figures/error_bar.pdf used on input line 35.
+Package pdftex.def Info: ./figures/error_bar.pdf used on input line 43.
 (pdftex.def)             Requested size: 226.14749pt x 169.60735pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (experiments.tex [13.13 <./figures/cdf_limited.pdf>] <./figures/speed_cdf.pdf, id=465, 578.16pt x 433.62pt>
+) (experiments.tex [13.13 <./figures/cdf_absolute_limited.pdf> <./figures/cdf_limited.pdf>]
+<./figures/speed_cdf.pdf, id=483, 578.16pt x 433.62pt>
 File: ./figures/speed_cdf.pdf Graphic file (type pdf)
-
-<use ./figures/speed_cdf.pdf>
+ <use ./figures/speed_cdf.pdf>
 Package pdftex.def Info: ./figures/speed_cdf.pdf used on input line 17.
 (pdftex.def)             Requested size: 203.53136pt x 152.64264pt.
- <./figures/large_font/speed_vol.pdf, id=466, 578.16pt x 433.62pt>
-File: ./figures/large_font/speed_vol.pdf Graphic file (type pdf)
 
-<use ./figures/large_font/speed_vol.pdf>
+<./figures/large_font/speed_vol.pdf, id=484, 578.16pt x 433.62pt>
+File: ./figures/large_font/speed_vol.pdf Graphic file (type pdf)
+ <use ./figures/large_font/speed_vol.pdf>
 Package pdftex.def Info: ./figures/large_font/speed_vol.pdf used on input line 18.
 (pdftex.def)             Requested size: 203.53136pt x 152.64264pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Excluding 'comment' comment. [14.14 <./figures/error_bar.pdf>]
-<./figures/large_font/speed_gap.pdf, id=481, 578.16pt x 433.62pt>
+[14.14 <./figures/error_bar.pdf>] <./figures/large_font/speed_gap.pdf, id=498, 578.16pt x 433.62pt>
 File: ./figures/large_font/speed_gap.pdf Graphic file (type pdf)
- <use ./figures/large_font/speed_gap.pdf>
-Package pdftex.def Info: ./figures/large_font/speed_gap.pdf used on input line 43.
+
+<use ./figures/large_font/speed_gap.pdf>
+Package pdftex.def Info: ./figures/large_font/speed_gap.pdf used on input line 45.
 (pdftex.def)             Requested size: 144.7377pt x 108.5503pt.
-
-<./figures/large_font/speed_gap_cdf.pdf, id=482, 578.16pt x 433.62pt>
+ <./figures/large_font/speed_gap_cdf.pdf, id=499, 578.16pt x 433.62pt>
 File: ./figures/large_font/speed_gap_cdf.pdf Graphic file (type pdf)
- <use ./figures/large_font/speed_gap_cdf.pdf>
-Package pdftex.def Info: ./figures/large_font/speed_gap_cdf.pdf used on input line 44.
-(pdftex.def)             Requested size: 140.21034pt x 105.15602pt.
 
-<./figures/large_font/speed_per_conn_vol.pdf, id=483, 578.16pt x 433.62pt>
+<use ./figures/large_font/speed_gap_cdf.pdf>
+Package pdftex.def Info: ./figures/large_font/speed_gap_cdf.pdf used on input line 46.
+(pdftex.def)             Requested size: 140.21034pt x 105.15602pt.
+ <./figures/large_font/speed_per_conn_vol.pdf, id=500, 578.16pt x 433.62pt>
 File: ./figures/large_font/speed_per_conn_vol.pdf Graphic file (type pdf)
 
 <use ./figures/large_font/speed_per_conn_vol.pdf>
-Package pdftex.def Info: ./figures/large_font/speed_per_conn_vol.pdf used on input line 45.
+Package pdftex.def Info: ./figures/large_font/speed_per_conn_vol.pdf used on input line 47.
 (pdftex.def)             Requested size: 148.35408pt x 111.26306pt.
  [15.15 <./figures/speed_cdf.pdf> <./figures/large_font/speed_vol.pdf> <./figures/large_font/speed_gap.pdf> <./figures/l
-arge_font/speed_gap_cdf.pdf> <./figures/large_font/speed_per_conn_vol.pdf>] Excluding 'comment' comment. Excluding 'comm
-ent' comment.
-<./figures/app_per_min_8_6.pdf, id=518, 567.36969pt x 426.59375pt>
+arge_font/speed_gap_cdf.pdf> <./figures/large_font/speed_per_conn_vol.pdf>] <./figures/app_per_min_8_6.pdf, id=538, 567.
+36969pt x 426.59375pt>
 File: ./figures/app_per_min_8_6.pdf Graphic file (type pdf)
  <use ./figures/app_per_min_8_6.pdf>
-Package pdftex.def Info: ./figures/app_per_min_8_6.pdf used on input line 148.
+Package pdftex.def Info: ./figures/app_per_min_8_6.pdf used on input line 152.
 (pdftex.def)             Requested size: 144.7377pt x 108.82227pt.
 
-<./figures/app_switch_frequency_line_8_6.pdf, id=519, 574.145pt x 426.59375pt>
+<./figures/app_switch_frequency_line_8_6.pdf, id=539, 574.145pt x 426.59375pt>
 File: ./figures/app_switch_frequency_line_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/app_switch_frequency_line_8_6.pdf>
-Package pdftex.def Info: ./figures/app_switch_frequency_line_8_6.pdf used on input line 149.
+Package pdftex.def Info: ./figures/app_switch_frequency_line_8_6.pdf used on input line 153.
 (pdftex.def)             Requested size: 144.7377pt x 107.53993pt.
- <./figures/app_overlap_8_6.pdf, id=520, 567.36969pt x 426.59375pt>
+ <./figures/app_overlap_8_6.pdf, id=540, 567.36969pt x 426.59375pt>
 File: ./figures/app_overlap_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/app_overlap_8_6.pdf>
-Package pdftex.def Info: ./figures/app_overlap_8_6.pdf used on input line 150.
+Package pdftex.def Info: ./figures/app_overlap_8_6.pdf used on input line 154.
 (pdftex.def)             Requested size: 144.7377pt x 108.82227pt.
- <./figures/app_category_per_min_8_6.pdf, id=521, 574.145pt x 429.605pt>
+ <./figures/app_category_per_min_8_6.pdf, id=541, 574.145pt x 429.605pt>
 File: ./figures/app_category_per_min_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/app_category_per_min_8_6.pdf>
-Package pdftex.def Info: ./figures/app_category_per_min_8_6.pdf used on input line 151.
+Package pdftex.def Info: ./figures/app_category_per_min_8_6.pdf used on input line 155.
 (pdftex.def)             Requested size: 144.7377pt x 108.29904pt.
 
-<./figures/app_category_switch_frequency_line_8_6.pdf, id=522, 574.145pt x 426.59375pt>
+<./figures/app_category_switch_frequency_line_8_6.pdf, id=542, 574.145pt x 426.59375pt>
 File: ./figures/app_category_switch_frequency_line_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/app_category_switch_frequency_line_8_6.pdf>
-Package pdftex.def Info: ./figures/app_category_switch_frequency_line_8_6.pdf used on input line 152.
+Package pdftex.def Info: ./figures/app_category_switch_frequency_line_8_6.pdf used on input line 156.
 (pdftex.def)             Requested size: 144.7377pt x 107.53993pt.
 
-<./figures/app_category_overlap_8_6.pdf, id=523, 567.36969pt x 430.35782pt>
+<./figures/app_category_overlap_8_6.pdf, id=543, 567.36969pt x 430.35782pt>
 File: ./figures/app_category_overlap_8_6.pdf Graphic file (type pdf)
 
 <use ./figures/app_category_overlap_8_6.pdf>
-Package pdftex.def Info: ./figures/app_category_overlap_8_6.pdf used on input line 153.
+Package pdftex.def Info: ./figures/app_category_overlap_8_6.pdf used on input line 157.
 (pdftex.def)             Requested size: 144.7377pt x 109.78247pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Excluding 'comment' comment. Excluding 'comment' comment. Excluding 'comment' comment. [16.16]
-<./figures/large_font/speed_appcat.pdf, id=546, 1156.32pt x 578.16pt>
+[16.16] [17.17 <./figures/app_per_min_8_6.pdf> <./figures/app_switch_frequency_line_8_6.pdf> <./figures/app_overlap_8_6.
+pdf> <./figures/app_category_per_min_8_6.pdf> <./figures/app_category_switch_frequency_line_8_6.pdf> <./figures/app_cate
+gory_overlap_8_6.pdf>] <./figures/large_font/speed_appcat.pdf, id=602, 1156.32pt x 578.16pt>
 File: ./figures/large_font/speed_appcat.pdf Graphic file (type pdf)
- <use ./figures/large_font/speed_appcat.pdf>
-Package pdftex.def Info: ./figures/large_font/speed_appcat.pdf used on input line 225.
+
+<use ./figures/large_font/speed_appcat.pdf>
+Package pdftex.def Info: ./figures/large_font/speed_appcat.pdf used on input line 230.
 (pdftex.def)             Requested size: 452.28629pt x 216.80946pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (limitation.tex [17.17 <./figures/app_per_min_8_6.pdf> <./figures/app_switch_frequency_line_8_6.pdf> <./figures/app_ov
-erlap_8_6.pdf> <./figures/app_category_per_min_8_6.pdf> <./figures/app_category_switch_frequency_line_8_6.pdf> <./figure
-s/app_category_overlap_8_6.pdf>]) (conclude.tex) [18.18 <./figures/large_font/speed_appcat.pdf>] (main.bbl
+) (limitation.tex [18.18 <./figures/large_font/speed_appcat.pdf>])
+(conclude.tex) (main.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 48.
 
@@ -1312,12 +1301,18 @@ Underfull \hbox (badness 5403) in paragraph at lines 108--114
 ww . ericsson . com / res / docs / 2016 / mobility-[]report /
  []
 
-[19.19]) [20.20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
+
+Underfull \vbox (badness 4660) has occurred while \output is active []
+
+ [19.19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20.20]) [21.21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 19E24AAEC4486B8A6D7BFB04115ACB21;4083.
  )
@@ -1326,20 +1321,20 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 20098 strings out of 493333
- 310102 string characters out of 3139182
- 430722 words of memory out of 3000000
- 22475 multiletter control sequences out of 15000+200000
- 200249 words of font info for 452 fonts, out of 3000000 for 9000
+ 20041 strings out of 493333
+ 308773 string characters out of 3139182
+ 431985 words of memory out of 3000000
+ 22419 multiletter control sequences out of 15000+200000
+ 181915 words of font info for 422 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,18n,94p,1423b,3127s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,18n,94p,1423b,3148s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{C:/Users/Zheng Lu
 /AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/newtx/libertinealt.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/e
 nc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_c7kyj5.e
 nc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvip
-s/libertine/lbtn_7grukw.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/
-Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Zheng Lu/AppData/Roaming/M
-iKTeX/2.9/fonts/enc/dvips/libertine/lbtn_afusau.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
+s/libertine/lbtn_afusau.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/
+Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/Zheng Lu/AppData/Roaming/M
+iKTeX/2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
 ine/lbtn_76gpa5.enc}<C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C
 :/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/Zheng Lu/AppData/Roa
 ming/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1
@@ -1352,9 +1347,9 @@ ppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/rtxmi7.pfb><C:/Users/Zheng Lu
 public/txfonts/rtxr.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/Zhe
 ng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/
 type1/public/newtx/zxlr.pfb><C:/Users/Zheng Lu/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/zxlri.pfb>
-Output written on main.pdf (20 pages, 2540738 bytes).
+Output written on main.pdf (21 pages, 2551874 bytes).
 PDF statistics:
- 797 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
- 61757 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 822 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 58690 words of extra memory for PDF output out of 61914 (max. 10000000)
 
