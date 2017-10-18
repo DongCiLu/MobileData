@@ -1,0 +1,10 @@
+
+::::::::::::::::Special Topics:::::::::::::::::
+
+For city:  xuzhou
+-------Speed Usage Pattern Analysis-------
+Distribution of gaps for various speed:
+[42.420947087622004, 26.09706865745573, 22.347151796310282, 18.47226569292297, 17.84527091373866, 15.899077868852459, 11.717973231357552, 10.367920353982301]
+Distribution of vols for various speed:
+[11582, 10378, 10698, 10074, 10039, 9609, 9975, 9465]
+

@@ -1,0 +1,11 @@
+
+::::::::::::::::Special Topics:::::::::::::::::
+
+For city:  all_city
+-------Speed Usage Pattern Analysis-------
+Distribution of gaps for various speed:
+[43.99248111718248, 24.33081466327911, 21.514464196782367, 18.537853832442067, 19.26884691167652, 16.287919051512674, 11.407536927814604, 9.51847723570265]
+Distribution of vols for various speed:
+[11777, 10736, 10552, 9954, 10459, 10490, 10434, 11051]
+-------Example User Analysis-------
+

@@ -1,0 +1,10 @@
+
+::::::::::::::::Special Topics:::::::::::::::::
+
+For city:  yancheng
+-------Speed Usage Pattern Analysis-------
+Distribution of gaps for various speed:
+[45.68075952435269, 24.658122935975285, 24.087027914614122, 22.000105993958343, 19.948868071818893, 19.63910917979359, 14.199540067220944, 9.37117067833698]
+Distribution of vols for various speed:
+[11960, 11782, 11234, 10754, 11604, 10755, 12054, 14166]
+

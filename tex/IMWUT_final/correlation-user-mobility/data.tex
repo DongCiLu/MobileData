@@ -1,7 +1,6 @@
 \section{Data Description}\label{data}
 
-In this section, we provide a description of the dataset,
-followed by an example of a user's data.
+In this section, we describe the dataset, followed by an example of a user's data.
 
 \subsection{Dataset}
 
@@ -56,7 +55,7 @@ The dataset includes more than 58 million mobile data access records with a tota
 The number of unique users included in this dataset is identified as around 900 thousand. % removing duplicates.
 The total active time of all users accumulates to more than 1 million hours.
 \autoref{fig:city_sample} shows a heatmap of the mobile data access in a city area of our dataset.
-The dataset contains both user initiated network access and background network access.
+The dataset contains both user-initiated network access and background network access.
 
 \subsection{Data Preprocessing Findings}
 
@@ -73,7 +72,7 @@ the number of records per user, as shown in \autoref{fig:data_stat1}, and
 the time intervals between consecutive records, as shown in \autoref{fig:data_stat2}.
 Here, a higher record density, \ie more records for a user in a time unit, indicates a better performance to infer user mobility even when the trip length is very short,
 as we can obtain a better granularity by analyzing these records.
-Actually, it is the case that most user only traveled a very short trip in terms of the number of visited towers according to \autoref{fig:data_stat3}.
+Actually, it is the case that most user only traveled a very short trip regarding the number of visited towers according to \autoref{fig:data_stat3}.
 
 \begin{figure}[h]
   \centering
@@ -105,7 +104,7 @@ Such differences make it harder to accurately estimate user speed based on exist
 
 To provide a clear view of our data, we visualize a user's records from our dataset in \autoref{fig:typical_user} as a running example.
 Suppose that the user was taking the path (while using the cell phone) shown with the dashed line.
-In particular, she started by walking from location 1, to location 2 where she waited for the bus.
+In particular, she started by walking from location 1 to location 2 where she waited for the bus.
 After a few minutes, she got onto the bus, which took the path towards location 3.
 Even though we did not know the actual path of the user,
 her locations could be inferred by the nearby towers to which her communication data were sent to.

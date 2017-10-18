@@ -1,0 +1,10 @@
+
+::::::::::::::::Special Topics:::::::::::::::::
+
+For city:  taizhou
+-------Speed Usage Pattern Analysis-------
+Distribution of gaps for various speed:
+[44.11799000657172, 21.934391446342023, 17.740431148262207, 15.718279187591662, 20.68229129280023, 13.170717249555423, 7.83008952899961, 8.571838256380843]
+Distribution of vols for various speed:
+[11820, 10135, 9655, 9130, 10009, 11426, 9400, 9842]
+

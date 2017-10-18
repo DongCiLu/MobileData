@@ -1,0 +1,67 @@
+figure;
+h=bar(x);
+set(gca,'XLim',[0 20]);
+set(gca,'XTick',[1:19]);
+x_label = {'Instant Message'; 
+    'Comic';
+    'Email';
+    'p2p';
+    'voip';
+    'Multimedia Message';
+    'Download';
+    'Finance';
+    'Security';
+    'Other1';
+    'Reading'; 
+    'Other2';
+    'Social Networking'; 
+    'Navigation'; 
+    'Video'; 
+    'Music'; 
+    'App Store';
+    'Game';
+    'Payment'}
+set(gca,'XTickLabel',x_label);
+set(gca,'XTickLabelRotation',45);
+% set(gca, 'YScale', 'log');
+% set(gca,'YLim',[1 1000]);
+ylabel_hand=ylabel('Session count per user');
+set(ylabel_hand,'Fontname', 'Times New Roman', 'Fontsize', 15);
+% xlabel_hand=xlabel('Number of machines');
+% set(xlabel_hand,'Fontname', 'Times New Roman', 'Fontsize', 15);
+legend_str= {'Active sessions'; 'Static sessions'};
+legend_hand = legend(legend_str, 'Location', 'northeast');
+%legend_hand = columnlegend(2, legend_str, 'Location', 'northeast');
+set(legend_hand,'Fontname', 'Times New Roman', 'Fontsize', 15);
+
+figure;
+y = x(:,1) - x(:,2)
+h=bar(y);
+set(gca,'XLim',[0 20]);
+set(gca,'XTick',[1:19]);
+set(gca,'XTickLabel',x_label);
+set(gca,'XTickLabelRotation',45);
+%set(gca,'YLim',[-1 2]);
+%set(gca,'YTickLabel',{0; 0.5; 1; 1.5; 2}); 
+ylabel_hand=ylabel('Difference of session count per user');
+set(ylabel_hand,'Fontname', 'Times New Roman', 'Fontsize', 15);
+legend_str= {'Active - Static'};
+legend_hand = legend(legend_str, 'Location', 'northeast');
+%legend_hand = columnlegend(2, legend_str, 'Location', 'northeast');
+set(legend_hand,'Fontname', 'Times New Roman', 'Fontsize', 15);
+
+figure;
+z = 2 * y ./ (x(:,1) + x(:,2))
+h=bar(z);
+set(gca,'XLim',[0 20]);
+set(gca,'XTick',[1:19]);
+set(gca,'XTickLabel',x_label);
+set(gca,'XTickLabelRotation',45);
+%set(gca,'YLim',[-1 2]);
+%set(gca,'YTickLabel',{0; 0.5; 1; 1.5; 2}); 
+ylabel_hand=ylabel('Normalized difference of session count per user');
+set(ylabel_hand,'Fontname', 'Times New Roman', 'Fontsize', 15);
+legend_str= {'2(Active - Static) / (Active + Static)'};
+legend_hand = legend(legend_str, 'Location', 'northeast');
+%legend_hand = columnlegend(2, legend_str, 'Location', 'northeast');
+set(legend_hand,'Fontname', 'Times New Roman', 'Fontsize', 15);

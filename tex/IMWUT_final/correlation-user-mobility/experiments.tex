@@ -9,7 +9,7 @@ We implement our speed estimation algorithm and mobile data usage pattern analys
 
 \subsection{Speed and Data Volumes}
 
-To estimate the speed, our algorithm requires a user has visited at least 3 towers consecutively. In the dataset, we find that around 13 million records out of 58 million records can be utilized. Although the dataset contains both user initiated network access and background network access, we find it very hard to separate them reliably. In our experiments, to balance the accuracy of speed estimates and the number of mobile data access records that have qualified speed estimates, we set the threshold of both distance ratio $d_{ratio}$ and duration ratio $\Delta t_{ratio}$ empirically as 0.6. After the filtering, we have around 1 million records out of total 13 million records that meet both criteria. \autoref{fig:speed_cdf} shows the cumulative density function (CDF) of both raw speed estimates without filtering and filtered speed estimates. As we can see that the filtered speed estimates are more realistic compared to raw speed estimates. Most of the false high speed estimates and low speed estimates are filtered out by setting thresholds of confidence levels for distance estimates and travel time estimates.
+To estimate the speed, our algorithm requires a user has visited at least 3 towers consecutively. In the dataset, we find that around 13 million records out of 58 million records can be utilized. Although the dataset contains both user-initiated network access and background network access, we find it very hard to separate them reliably. In our experiments, to balance the accuracy of speed estimates and the number of mobile data access records that have qualified speed estimates, we set the threshold of both distance ratio $d_{ratio}$ and duration ratio $\Delta t_{ratio}$ empirically as 0.6. After the filtering, we have around 1 million records out of total 13 million records that meet both criteria. \autoref{fig:speed_cdf} shows the cumulative density function (CDF) of both raw speed estimates without filtering and filtered speed estimates. As we can see that the filtered speed estimates are more realistic compared to raw speed estimates. Most of the false high-speed estimates and low-speed estimates are filtered out by setting thresholds of confidence levels for distance estimates and travel time estimates.
 In the following experiments, we only show results in the speed range from 0 km/h to 100 km/h, since there are very few records with a speed estimate above 100 km/h for any meaningful insights.
 
 \begin{figure}[h]
@@ -36,7 +36,7 @@ In the following experiments, we only show results in the speed range from 0 km/
 %\end{figure}
 %\end{comment}
 
-\autoref{fig:speed_vol} shows the results of the correlation of user speed and the average mobile data access volumes per user per second. We demonstrate the data from all three cities combined and each city respectively. The figure shows a clear trend that users are more active in accessing mobile data as the speed increases and the trend holds true for all three cities. In fact, a user with speed estimates of 80-100 km/h could reach an average data volume of 6 times of a low-speed user. Similarly, this trend also holds true for all the cities. Note that these results only show an increase in the mobile data access volume as user speed increases. It does not suggest lower speed users access online contents less frequently. Actually, we believe one reason might be that a large portion of a low-speed user's online needs is already fulfilled by various kind of high-speed connections such as Wifi hotspots. To this end, we reach similar findings with previous work~\cite{yang2015characterizing} on the correlation of user mobility and mobile data access volume, except that the previous work used the number of towers visited by a user as the indicator of user mobility.
+\autoref{fig:speed_vol} shows the results of the correlation of user speed and the average mobile data access volumes per user per second. We demonstrate the data from all three cities combined and each city respectively. The figure shows a clear trend that users are more active in accessing mobile data as the speed increases and the trend holds true for all three cities. In fact, a user with speed estimates of 80-100 km/h could reach an average data volume of 6 times of a low-speed user. Similarly, this trend also holds true for all the cities. Note that these results only show an increase in the mobile data access volume as user speed increases. It does not suggest lower speed users access online contents less frequently. We believe one reason might be that a large portion of a low-speed user's online needs is already fulfilled by various kind of high-speed connections such as Wifi hotspots. To this end, we reach similar findings with previous work~\cite{yang2015characterizing} on the correlation of user mobility and mobile data access volume, except that the previous work used the number of towers visited by a user as the indicator of user mobility.
 
 \subsection{Speed and Access Frequency}
 
@@ -49,19 +49,13 @@ In the following experiments, we only show results in the speed range from 0 km/
 \label{fig:speed_corr}
 \end{figure}
 
-\autoref{fig:speed_gap} shows the correlation of speed and average idle time intervals between consecutive mobile data access records. Here a mobile data access record is defined as a single record entry in our dataset. The CDF of data time intervals for various speed ranges of all three cities are also shown in \autoref{fig:speed_gap_cdf}. Note that since the time precision of our data trace is seconds, so there are steps in \autoref{fig:speed_gap_cdf}. The decrease in time intervals as speed increases suggests that high-speed user accesses mobile data more frequently than low-speed users. A user with a speed estimate of 80-100 km/h access mobile data almost twice more frequently than a user with a speed estimate of 0-20 km/h on average. The trend holds for all three cities except that there is an odd point at 80-100 km/h for one city, which may be caused by the lacking of available data.
+\autoref{fig:speed_gap} shows the correlation of speed and average idle time intervals between consecutive mobile data access records. Here a mobile data access record is defined as a single record entry in our dataset. The CDFs of data time intervals for various speed ranges of all three cities are also shown in \autoref{fig:speed_gap_cdf}. Note that since the time precision of our data trace is seconds, so there are steps in \autoref{fig:speed_gap_cdf}. The decrease in time intervals as speed increases suggests that high-speed user accesses mobile data more frequently than low-speed users. A user with a speed estimate of 80-100 km/h access mobile data almost twice more frequently than a user with a speed estimate of 0-20 km/h on average. The trend holds for all three cities except that there is an odd point at 80-100 km/h for one city, which may be caused by the lacking of available data.
 
-We show the average volume for each data access in \autoref{fig:speed_per_conn_vol}. As the user speed increases, there is no apparent correlation with average volume for each data access. This suggests that increasing in the average volume which is shown in \autoref{fig:speed_vol} is mainly cause by the increased data access frequency, not the volume for each data access.
+We show the average volume for each data access in \autoref{fig:speed_per_conn_vol}. As the user speed increases, there is no apparent correlation with average volume for each data access. This suggests that increases in the average volume which is shown in \autoref{fig:speed_vol} is mainly caused by the increased data access frequency, not the volume for each data access.
 
 \subsection{Speed and App Usage}
 
-\change{In this part, we first studied the correlation speed and app usage in the perspective of app switching and concurrently running apps. This can give us more detailed insights about how the user mobility are related to the way users are using their smartphone, e.g., do they concentrate on one app or do they frequently switch between several apps? When we categorize the apps into several categories, we also want to know do the users use same type of apps when they are moving instead of sitting? We have \autoref{fig:speed_app} and \autoref{fig:speed_appcat} to answer this kind of questions.}
-
-According to the mobile service provider, each app in our dataset was assigned to one of 18 categories, as shown in \autoref{table:appcat}. 
-%We first divided estimated user speed at 50km/h into two classes. The low speed class includes transportation modes such as walking, cycling, bus and other low speed vehicles. The high speed class includes mainly high speed vehicles.  
-%We showed the number of data access per app category in \autoref{fig:speed_access_hl} and data volume per app category in \autoref{fig:speed_vol_hl}. In both figures, low speed users have more data access due to large user base. The share for each category holds similar trend for both high and low speed users. We will discuss more details on the contribution of each category to total data access in \autoref{fig:speed_appcat}.
-
-\begin{table}[h]
+\begin{table}[ht]
 	\centering
 	\begin{tabular}{lrrll}\hline
 	App Category & \# Apps & Volume (GB) & Example App & Remarks \\
@@ -80,7 +74,8 @@ According to the mobile service provider, each app in our dataset was assigned t
 	P2P & 8 & 3.9 & Bittorrent & P2P downloading \\
 	VOIP  & 17 & 0.3 & Skype & internet phone calls or video chats \\
 	Multimedia Messages & 2 & 0.3 & Caixin & \\
-	Browsing & 558 & 353.5 & Chrome & Webpage, Wechat moments, Qzone \\
+	Browsing & 558 & 353.5 & Chrome & Webpage, in-app internet access\\
+     & & & & Tweets like post, e.g. Wechat Moment  \\
 	Finance  & 25 & 0.7 & Flush & Stock, Financial news apps \\
 	Security  & 22 & 5.2 & McAfee & Anti-virus apps\\
     Others  & 244 & 95.8 & & \\
@@ -92,6 +87,12 @@ According to the mobile service provider, each app in our dataset was assigned t
 	\caption{App categories}
 	\label{table:appcat}
 \end{table}
+
+In this part, we first studied the correlation speed and app usage in the perspective of app switching and concurrently running apps. We show this correlation in \autoref{fig:speed_app} that can be used as underlying support when answer questions such as "do users concentrate on a few apps or frequently switch between many apps under different speed category?" For apps in different categories, we also want to provide evidence to answer questions such as "do the users use the same type of apps when they are moving compared to when they are sitting?" So we take a further step and show the market share changes for each app category under different speed category in \autoref{fig:speed_appcat}. Here the market share of an app category is defined as its percentage of all-category mobile data access. With the results shown in both \autoref{fig:speed_app} and \autoref{fig:speed_appcat}, we can have a more detailed understanding of the way users use their smartphones under different speeds.
+
+According to the mobile service provider, each app in our dataset was assigned to one of 18 categories, as shown in \autoref{table:appcat}. We show the number of apps, the example app, and a short explanation if necessary for each category. For example, in browsing category, there are more than 500 apps. Because not only traditional browsers are included but also various in-app web page view and tweets like short posts of some IM apps are also counted as this category.
+%We first divided estimated user speed at 50km/h into two classes. The low speed class includes transportation modes such as walking, cycling, bus and other low speed vehicles. The high speed class includes mainly high speed vehicles.  
+%We showed the number of data access per app category in \autoref{fig:speed_access_hl} and data volume per app category in \autoref{fig:speed_vol_hl}. In both figures, low speed users have more data access due to large user base. The share for each category holds similar trend for both high and low speed users. We will discuss more details on the contribution of each category to total data access in \autoref{fig:speed_appcat}.
 
 %\begin{comment}
 %\begin{table}[h]
@@ -147,7 +148,7 @@ According to the mobile service provider, each app in our dataset was assigned t
 %\end{comment}
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \subfigure[Number of unique apps used per minute\label{fig:app_per_min}]{\includegraphics[width=0.32\linewidth]{./figures/app_per_min_8_6.pdf}}
 \subfigure[App switch frequency\label{fig:switch_app}]{\includegraphics[width=0.32\linewidth]{./figures/app_switch_frequency_line_8_6.pdf}}
@@ -194,7 +195,7 @@ In
 %\autoref{fig:speed_app_switch}, 
 we show the frequency of app switch and app category switch. They both follow the same trend that lower speed users tend to switch apps and app categories more frequently. Combined with 
 \autoref{fig:app_per_min} and \autoref{fig:app_cate_per_min}, % \autoref{fig:speed_app_used}, 
-we can see that although low speed users switch apps more frequently, they only switch among fewer number of apps.
+we can see that although low-speed users switch apps more frequently, they only switch among a fewer number of apps.
 
 %\begin{comment}
 %\begin{figure*}
@@ -225,7 +226,7 @@ The correlation between the user speed and the contribution of each category is 
 
 %\subsubsection{Impact of speed on each smartphone app category}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth,height=3in]{./figures/large_font/speed_appcat.pdf}
     \vspace{-0.3in}
@@ -236,7 +237,7 @@ The correlation between the user speed and the contribution of each category is 
 Among the top 8 categories, the Microblog, Navigation and Music categories show a clear upward trend as the speed increases.
 The impact of navigation has the most steady increase due to the increased needs for such apps when driving.
 The impact almost doubles for users with speed estimates of 80-100 km/h compared to users with speed estimates of 0-20 km/h.
-Instant message, Video and App market show a downward trend as the speed increases.
+Instant message, Video, and App market show a downward trend as the speed increases.
 The reason could be the users are cost sensitive and strictly control the data usage for large app downloading and video streaming.
 Browser \& Downloading and Reading show a quite stable impact that does not change a lot as the speed increases.
 

@@ -20,6 +20,9 @@
 %\usepackage[lined,linesnumbered,ruled]{algorithm2e}
 \usepackage[flushleft]{threeparttable}
 
+%\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+
 % added commands from major revision version
 \def\sectionautorefname{Section}
 \def\subsectionautorefname{Section}
@@ -42,7 +45,7 @@
 \newcommand{\ie}{i.e., }
 \newcommand{\eg}{e.g., }
 %\newcommand{\note}[1]{\textbf{\color{red}[***** #1 *****]}}
-\newcommand{\change}[1]{\textbf{\color{blue}#1}}
+%\newcommand{\change}[1]{\textbf{\color{blue}#1}}
 
 \newtheorem{case}{Use Case}
 
@@ -94,7 +97,7 @@
   \country{USA}}
 \email{zlu12@vols.utk.edu}
 \author{Yunhe Feng}
-%\authornote{This is the corresponding author}
+\authornote{This is the corresponding author}
 \affiliation{%
   \institution{University of Tennessee}
   %\streetaddress{104 Jamestown Rd}
@@ -205,10 +208,11 @@
 \input{limitation}
 \input{conclude}
 
-%\begin{acks}
-%
-%The authors would like to thank ...
-%
+\begin{acks}
+
+The authors would like to thank the anonymous reviwers for their insightful comments.
+The work reported in this paper was supported in part by the grant  USDA NIFA 2017-67007-26150.
+
 %%The work is supported by the \grantsponsor{GS501100001809}{National
   %%Natural Science Foundation of
   %%China}{http://dx.doi.org/10.13039/501100001809} under Grant
@@ -216,7 +220,7 @@
 %%and~\grantnum[http://www.nnsf.cn/youngscientists]{GS501100001809}{Young
   %%Scientists' Support Program}.
 %
-%\end{acks}
+\end{acks}
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{refs}

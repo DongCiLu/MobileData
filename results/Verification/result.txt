@@ -1,0 +1,22 @@
+
+:::::::Estimate Speed:::::::
+
+1. Preprocess data
+../datasets/verification_data/processed/GSMP : ..
+2007 records, 62 aggregated records, 55 towers
+2. Stimulate tower boundaries with Voronoi map
+152 boundaries
+3. Estimate distance lower bound based on tower boundaries
+4. Estimate speed range
+5. Calculate ground truth
+6. Speed analysis
+-------Estimated Speed Basic Analysis-------
+Counters:  2007 1955 571
+Speed estimation error distribution:
+[335, 164, 191, 111, 117, 149, 233, 130, 33, 492]
+Alternative speed estimation error distribution:
+[120, 194, 76, 374, 0, 85, 181, 96, 0, 829]
+Passed speed estimation error distribution:
+[140, 137, 79, 65, 0, 58, 67, 0, 0, 25]
+Passed alternative speed estimation error distribution:
+[25, 107, 37, 151, 0, 0, 153, 0, 0, 98]
