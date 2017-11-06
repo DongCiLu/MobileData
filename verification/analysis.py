@@ -8,6 +8,10 @@ speed_per_bin = 20
 # max_speed_bin_cnt = 2
 # speed_per_bin = 50
 
+def basic_analysis(session, compressed_session, rules):
+    print 'Number of records:', len(session)
+    print 'Length of records:', session[-1].time / 60
+    
 def estimated_speed_basic_analysis(compressed_session, rules):
     print '-------Estimated Speed Basic Analysis-------'
     # all unit are in number of records
@@ -107,7 +111,7 @@ def estimated_speed_basic_analysis(compressed_session, rules):
     print ''
 
 def estimated_speed_error_analysis(compressed_session, rules):
-    print '-------Estimated Speed Basic Analysis-------'
+    print '-------Estimated Speed Error Analysis-------'
     # all unit are in number of records
     record_cnt = 0
     record_westspeed_cnt = 0
@@ -123,9 +127,17 @@ def estimated_speed_error_analysis(compressed_session, rules):
         record_cnt += agg_record.record_cnt
 
         # for estimated speed only
+        speedest_error = 0
         if agg_record.speed != (None, None):
             record_westspeed_cnt += agg_record.record_cnt
             speedest_error = abs(agg_record.speed[1] - agg_record.speed_gt) / agg_record.speed_gt 
+            # for i in range(agg_record.record_cnt):
+            #     if speedest_error < 1:
+            #         print speedest_error
+            #     else:
+            #         print 1
+            # for i in range(agg_record.record_cnt):
+            #     print abs(agg_record.speed[1] - agg_record.speed_gt)
             speedestalt_error = abs(agg_record.speed[1] - agg_record.speed_gt_alt) / agg_record.speed_gt_alt
             speedest_error_index = min(int(speedest_error /\
                     error_per_bin), max_error_bin_cnt - 1)
@@ -139,11 +151,12 @@ def estimated_speed_error_analysis(compressed_session, rules):
         speed_range = get_speed(agg_record, rules)
         if speed_range != None:
             record_passed_cnt += agg_record.record_cnt
+            for i in range(agg_record.record_cnt):
+                print abs(agg_record.speed[1] - agg_record.speed_gt)
             passed_speedest_error_dist[speedest_error_index] += \
                     agg_record.record_cnt
             passed_speedestalt_error_dist[speedestalt_error_index] += \
                     agg_record.record_cnt
-
 
     print 'Counters: ', record_cnt, record_westspeed_cnt, record_passed_cnt
     print 'Speed estimation error distribution:'
@@ -154,3 +167,48 @@ def estimated_speed_error_analysis(compressed_session, rules):
     print passed_speedest_error_dist
     print 'Passed alternative speed estimation error distribution:'
     print passed_speedestalt_error_dist
+
+def estimated_distance_error_analysis(compressed_session, rules):
+    print '-------Estimated Distance Error Analysis-------'
+    # all unit are in number of records
+    record_cnt = 0
+    record_westdist_cnt = 0
+    record_passed_cnt = 0
+    max_error_bin_cnt = 10 
+    error_per_bin = 0.1
+    distest_error_dist = [0] * max_error_bin_cnt
+    passed_distest_error_dist = [0] * max_error_bin_cnt
+
+    for agg_record in compressed_session:
+        record_cnt += agg_record.record_cnt
+
+        # for estimated speed only
+        distest_error = 0
+        if agg_record.dist_est != None:
+            record_westdist_cnt += agg_record.record_cnt
+            distest_error = abs(agg_record.dist_est - agg_record.dist_gt) / agg_record.dist_gt 
+            distest_error_index = min(int(distest_error /\
+                    error_per_bin), max_error_bin_cnt - 1)
+            distest_error_dist[distest_error_index] += \
+                    agg_record.record_cnt
+            '''
+            for i in range(agg_record.record_cnt):
+                if distest_error > 1:
+                    print 1
+                else:
+                    print distest_error
+            '''
+
+        if agg_record.dist_lb != None and \
+                agg_record.dist_est != None and \
+                agg_record.dist_lb / agg_record.dist_est >= \
+                rules.cv_dist_ratio_threshold:
+            record_passed_cnt += agg_record.record_cnt
+            passed_distest_error_dist[distest_error_index] += \
+                    agg_record.record_cnt
+
+    print 'Counters: ', record_cnt, record_westdist_cnt, record_passed_cnt
+    print 'Dist estimation error distribution:'
+    print distest_error_dist
+    print 'Passed dist estimation error distribution:'
+    print passed_distest_error_dist

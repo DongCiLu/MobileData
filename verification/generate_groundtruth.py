@@ -20,8 +20,26 @@ def generate_groundtruth(tracefn, outdir):
                     LNG = float(segs[15][4:])
                     outf.write("{}, {}, {}\n".format(TIME, LAT, LNG))
 
+def generate_figure(tracefn):
+    for subdir, dirs, files in os.walk(tracefn):
+        for f in files:
+            fn = os.path.join(subdir, f)
+            if f != "GPS1.txt" and f != "GPS2.txt":
+                continue
+            with open(fn) as curf:
+                for line in curf:
+                    segs = line.split('|')
+                    if len(segs) != 19 or segs[0] != "TYPE=GPS":
+                        continue
+                    LAT = float(segs[6][4:])
+                    LNG = float(segs[15][4:])
+                    print "new google.maps.LatLng({}, {}),".format(LAT, LNG)
+
+            
+
 if __name__ == '__main__':
     tracefn = "../datasets/verification_data/processed/GPS"
     outdir = "../datasets/verification_data/processed/GPSP"
-    locations = generate_groundtruth(tracefn, outdir)
+    # locations = generate_groundtruth(tracefn, outdir)
+    generate_figure(tracefn)
 

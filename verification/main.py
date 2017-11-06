@@ -52,5 +52,8 @@ if __name__ == '__main__':
             '../datasets/verification_data/processed/GPSP')
 
     print '6. Speed analysis'
+    # an.basic_analysis(session, compressed_session, rules)
     # an.estimated_speed_basic_analysis(compressed_session, rules)
     an.estimated_speed_error_analysis(compressed_session, rules)
+    # an.estimated_distance_error_analysis(compressed_session, rules)
+
