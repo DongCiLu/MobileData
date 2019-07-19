@@ -28,3 +28,6 @@ By filtering out poor quality distance estimates, we are able to achieve higher 
 Here we shows the correlation of estimated speed and different category of smartphone apps usage. More results can be found in our [paper](http://yunhefeng.me/material/App_Speed.pdf).
 
 <img src="/example/correlation.png" width="900px"/>
+
+## How to run the code
+The configuration script and run script locate in MobileData/utils/
